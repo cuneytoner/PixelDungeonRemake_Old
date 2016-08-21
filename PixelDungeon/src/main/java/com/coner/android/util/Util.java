@@ -1,5 +1,8 @@
 package com.coner.android.util;
 
+import android.content.Context;
+import android.content.res.Configuration;
+
 import com.coner.pixeldungeon.remake.EventCollector;
 
 import org.acra.ACRA;
@@ -17,6 +20,12 @@ public class Util {
 		StringWriter sw = new StringWriter();
 		e.printStackTrace(new PrintWriter(sw));
 		return sw.toString();
+	}
+
+	public static boolean isTablet(Context context) {
+		return (context.getResources().getConfiguration().screenLayout
+				& Configuration.SCREENLAYOUT_SIZE_MASK)
+				>= Configuration.SCREENLAYOUT_SIZE_LARGE;
 	}
 
 	static public String toString(Exception e) {

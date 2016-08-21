@@ -101,8 +101,8 @@ public class PixelDungeon extends Game {
 
 		DisplayMetrics metrics = new DisplayMetrics();
 		instance().getWindowManager().getDefaultDisplay().getMetrics(metrics);
-		boolean landscape = metrics.widthPixels > metrics.heightPixels;
 
+		boolean landscape = Util.isTablet(this.getApplicationContext());
 		if (Preferences.INSTANCE.getBoolean(Preferences.KEY_LANDSCAPE, false) != landscape) {
 			landscape(!landscape);
 		}

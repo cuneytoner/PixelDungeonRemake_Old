@@ -3,8 +3,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     package="com.coner.pixeldungeon.remake"
     android:installLocation="auto"
-    android:versionCode="8"
-    android:versionName="remake_01.08" >
+    android:versionCode="9"
+    android:versionName="remake_01.09" >
 
     <uses-sdk tools:overrideLibrary="com.google.android.gms.ads,com.google.android.gms,com.google.android.gms.base,com.google.android.gms.analytics" />
 
@@ -64,8 +64,7 @@
 
         <activity
             android:name="com.watabou.pixeldungeon.PixelDungeon"
-            android:label="@string/app_name"
-            android:screenOrientation="portrait" >
+            android:label="@string/app_name">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

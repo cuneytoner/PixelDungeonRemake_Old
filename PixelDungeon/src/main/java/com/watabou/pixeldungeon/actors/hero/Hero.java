@@ -206,6 +206,7 @@ public class Hero extends Char {
 		this();
 		setDifficulty(difficulty);
 
+		int hp_calc = (int) (30f / (1f + (10f/difficulty)));
 		if (getDifficulty() != 0) {
 			hp(ht(20));
 		} else {
