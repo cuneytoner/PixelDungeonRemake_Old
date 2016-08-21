@@ -144,7 +144,7 @@ public class Hero extends Char {
 	private static final String TXT_WAIT = Game.getVar(R.string.Hero_Wait);
 	private static final String TXT_SEARCH = Game.getVar(R.string.Hero_Search);
 
-	public static final int STARTING_STR = 100;
+	public static final int STARTING_STR = 10;
 
 	private static final float TIME_TO_REST = 1f;
 	private static final float TIME_TO_SEARCH = 2f;
@@ -152,8 +152,8 @@ public class Hero extends Char {
 	public HeroClass heroClass = HeroClass.ROGUE;
 	public HeroSubClass subClass = HeroSubClass.NONE;
 
-	int attackSkill = 100;
-	int defenseSkill = 50;
+	int attackSkill = 10;
+	int defenseSkill = 5;
 
 	private boolean ready = false;
 	public HeroAction curAction = null;
