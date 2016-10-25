@@ -43,7 +43,7 @@
 
     <string name="Char_YouMissed">Saldırdın : %1$s %2$s </string>
     <string name="Char_SmbMissed">%3$s saldırdı,%1$s %2$s </string>
-    <string name="Char_OutParalysis">The pain snapped %s out of paralysis</string>
+    <string name="Char_OutParalysis">Acı seni kendine getirdi. Felçten kurtuldun</string>
 
     <string-array name="Char_StaDodged">
         <item>sıyrıldı</item>
@@ -116,7 +116,7 @@
     <string name="Journal_Imp">Hırslı afacan</string>
 
     <!-- STRINGS OF WndBlacksmith CLASS -->
-    <string name="WndBlacksmith_Prompt">Tamam , anlaşma anlaşmadı. Senin için 2 nesneni daha kaliteli bir nesneye döüştüreceğim.</string>
+    <string name="WndBlacksmith_Prompt">Tamam , anlaşma anlaşmadı. Senin için 2 nesneni daha kaliteli bir nesneye dönüştüreceğim.</string>
     <string name="WndBlacksmith_Select">Dönüştürülecek nesneleri seç</string>
     <string name="WndBlacksmith_Reforge">Bunları dönüştür</string>
 

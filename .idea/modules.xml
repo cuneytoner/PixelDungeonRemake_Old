@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/PixelDungeon/PixelDungeon.iml" filepath="$PROJECT_DIR$/PixelDungeon/PixelDungeon.iml" />
+      <module fileurl="file://$PROJECT_DIR$/PixelDungeonRemake.iml" filepath="$PROJECT_DIR$/PixelDungeonRemake.iml" />
+    </modules>
+  </component>
+</project>

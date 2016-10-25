@@ -12,7 +12,7 @@
     <string name="Potion_No">Hayır, fikrimi değiştirdim</string>
     <string name="Potion_SureDrink">İçmek istediğine emin misin ?Genellikle bu tarz iksirler düşmana fırlatılarak kullanılır.</string>
     <string name="Potion_SureThrow">Fırlatmat istedğine emin misin ? Genelde bu iksirleri içmek daha mantıklıdır.</string>
-    <string name="Potion_Shatter">Şişe kırıldır ve %s sıvı zararsızca etrafa sıçradı</string>
+    <string name="Potion_Shatter">Şişe kırıldı ve %s sıvı zararsızca etrafa sıçradı</string>
 
     <string-array name="Potion_Colors">
         <item>turkuaz</item>
