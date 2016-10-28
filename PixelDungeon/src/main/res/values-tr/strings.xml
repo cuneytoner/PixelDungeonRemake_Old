@@ -535,4 +535,12 @@
     <string name="Crab_Desc">Bu dev yengeçler lağımın besin zincirinin en üstündedir.Çok hızlı ve zert kabukları ile ağır saldırılara karşı dayanılıdırlar</string>
     <string name="DM300_Desc">Bu makine cüceler tarafından yüzyıllar evvel yapıldı. Sonra, cüceler makineleri elemental ve şeytani golemler ile değiştirmeye başladı. Sonunda bu durum medeniyetlerinin düşüşüne önayak oldu DM-300 ve benzer makineler maden ve inşaat için bazende şehir savunması için kullanılıyordu</string>
     <string name="DeathKnight_Desc">İlk bakışta  masif zırhı içinde muhteşem bir savaşçı gibi görünüyor. Ama o yeminini sürdürmekte başarısız olan bir ruhun tezzahürü.  O bu topraklarda adını savaşta temizlemek için korumaya yemin ettiği masumlaru öldürmekle lanetlenmiş</string>
+    <string name="This_Capotain_gives_defence_skill">Bu şapka +1 savunma yeteneği verir</string>
+    <string name="This_Fez_gives_10_additional_HP">Bu fes +10 sağlık verir</string>
+    <string name="This_Nightcap_gives_2_additional_defense_skill">Bu şapka +2 savunma yeteneği verir</string>
+    <string name="This_Pirate_Set_gives_additional_2_attack_skill_2_defense_skill_and_10_HP">Bu korsan seti +2 savunma , +3 saldırı yeteneği ve 10 sağlık puanı verir</string>
+    <string name="This_Pumpkin_gives_additional_2_defense_skill_1_attack_skill_and_10_HP">Bu balkabağı +2 savunma ve +1 saldırı yeteneği verir</string>
+    <string name="This_Rabbit_Ears_gives_additional_4_defense_skill">Bu tavşan kulakları +4 savunma puanı verir</string>
+    <string name="This_Shades_gives_additional_2_defense_skill_and_10_HP">Bu gözlükler +2 savunma ve +10 can puanı verir</string>
+    <string name="This_Wizard_Hat_gives_additional_10_attack_skill_and_10_HP">Bu büyücü şapkası +10 saldırı ve +10 can puanı verir</string>
 </resources>

@@ -54,6 +54,23 @@ public class WndHats extends Window {
 		slot.setPos(MARGIN, slotTitle.height() + MARGIN * 2);
 		add(slot);
 
+		//info Button
+		TextButton sbInfo = new RedButton("i")
+		{
+			@Override
+			protected void onClick() {
+				super.onClick();
+				GameScene.show( new WndMessage( Accessory.getByName(Accessory.equipped().name()).getInfo() ) );
+			}
+		};
+
+        sbInfo.setRect(slot.x + slot.width() * 2 + MARGIN + ((int) (slot.width() * 1.75f)),
+                slot.y,
+                (int)(slot.width() / 2.5f), slot.height() / 2);
+
+
+        add(sbInfo);
+
 		//Unequip Button
 		TextButton sb = new RedButton(Game.getVar(R.string.WndHats_UnequipButton)) {
 			@Override
@@ -65,7 +82,7 @@ public class WndHats extends Window {
 			}
 		};
 
-		sb.setRect(slot.x + slot.width() * 2 + MARGIN, slot.y, slot.width() * 2, slot.height() / 2);
+		sb.setRect(slot.x + slot.width() * 2 + MARGIN, slot.y, (int) (slot.width() * 1.7f), slot.height() / 2);
 
 		add(sb);
 
@@ -157,11 +174,32 @@ public class WndHats extends Window {
 				}
 			};
 
-			rb.setRect(slot.x + slot.width() * 2 + MARGIN, rbY, slot.width() * 2, slot.height() / 2);
+			rb.setRect(slot.x + slot.width() * 2 + MARGIN, rbY, (int) (slot.width() * 1.7f), slot.height() / 2);
+                    //slot.x + slot.width() * 2 + MARGIN, rbY, slot.width() * 2, slot.height() / 2);
 			//rb.setRect(WIDTH / 4, rbY, WIDTH / 2, BUTTON_HEIGHT);
 
 			content.add(rb);
+
+            //info Button
+            TextButton sbInfo2 = new RedButton(".")
+            {
+                @Override
+                protected void onClick() {
+                    super.onClick();
+                    GameScene.show( new WndMessage( finalAccessory.getInfo() ) );
+                }
+            };
+
+            sbInfo2.setRect(slot.x + slot.width() * 2 + MARGIN + ((int) (slot.width() * 1.75f)),
+                            rbY,
+                            (int)(slot.width() * 1.5f), slot.height() / 2);
+
+            content.add(sbInfo2);
+
+
 			yPos = (int) (rb.bottom() + MARGIN * 2);
+
+
 		}
 
 		int h = Math.min(HEIGHT - MARGIN, yPos);

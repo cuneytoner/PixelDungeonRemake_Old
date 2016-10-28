@@ -19,6 +19,7 @@
 package com.watabou.pixeldungeon.actors.hero;
 
 import com.coner.android.util.TrackedRuntimeException;
+import com.coner.pixeldungeon.items.accessories.Accessory;
 import com.coner.pixeldungeon.items.guts.weapon.melee.Claymore;
 import com.coner.pixeldungeon.items.necropolis.BlackSkull;
 import com.coner.pixeldungeon.items.necropolis.BladeOfSouls;
@@ -53,6 +54,8 @@ import com.watabou.pixeldungeon.items.weapon.missiles.Dart;
 import com.watabou.pixeldungeon.ui.QuickSlot;
 import com.watabou.pixeldungeon.utils.Utils;
 import com.watabou.utils.Bundle;
+
+import java.util.List;
 
 public enum HeroClass {
 
@@ -118,6 +121,7 @@ public enum HeroClass {
 	}
 
 	private static void initDebug(Hero hero) {
+        /*
 		for(int i = 0;i<100;i++) {
 			hero.collect(new ScrollOfMagicMapping());
 			hero.collect(new PotionOfToxicGas());
@@ -136,9 +140,18 @@ public enum HeroClass {
 		hero.ht(1000);
 		hero.hp(1000);
 		hero.attackSkill = 1000;
-		//hero.defenseSkill = 1000;
+		hero.defenseSkill = 1000;*/
+        //hero.hasPetAccessory = true;
 
-	}
+        List<String> accessories = Accessory.getAccessoriesList();
+
+		//List
+		for (final String item : accessories) {
+			Accessory accessory = Accessory.getByName(item);
+			accessory.ownIt(true);
+		   }
+
+		}
 
 	private static void initCommon(Hero hero) {
 		(hero.belongings.armor = new ClothArmor()).identify();

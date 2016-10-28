@@ -26,11 +26,20 @@ public class Accessory {
 	protected String name = getClassParam("Name", Game.getVar(R.string.Item_Name), false);
 	protected String info = getClassParam("Info", Game.getVar(R.string.Item_Info), false);
 
+	protected int additionalAttackSkill = 0;
+	protected int additionalDefenseSkill = 0;
+	protected int additionalHP = 0;
+    protected boolean pet = false;
+
 	static final private Map<String,Class<? extends Accessory>> allAccessoriesList = new HashMap<>();
 
 	private static void registerAccessory(Class<? extends Accessory> Clazz) {
 		allAccessoriesList.put(Clazz.getSimpleName(), Clazz);
 	}
+
+    public String getInfo() {
+        return Game.getVar(R.string.AccessoryInfo);
+    }
 
 	static {
 		registerAccessory(Fez.class);
@@ -47,6 +56,23 @@ public class Accessory {
 
 	public static List<String> getAccessoriesList() {
 		return new ArrayList<>(allAccessoriesList.keySet());
+	}
+
+    public boolean hasPet() {return pet;}
+
+	public int getAdditionalHP()
+	{
+		return additionalHP;
+	}
+
+	public int getAdditionalDefenseSkill()
+	{
+		return additionalDefenseSkill;
+	}
+
+	public int getAdditionalAttackSkill()
+	{
+		return additionalAttackSkill;
 	}
 
 	public String getLayerFile() {
@@ -128,7 +154,8 @@ public class Accessory {
 		}
 	}
 
-	public void equip (){
+
+    public void equip (){
 		if(!haveIt()) {
 			return;
 		}

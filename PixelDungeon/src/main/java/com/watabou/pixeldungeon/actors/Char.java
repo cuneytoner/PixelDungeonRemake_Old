@@ -21,10 +21,13 @@ import android.support.annotation.NonNull;
 
 import com.coner.android.util.Scrambler;
 import com.coner.android.util.TrackedRuntimeException;
+import com.coner.pixeldungeon.items.accessories.Accessory;
 import com.coner.pixeldungeon.remake.EventCollector;
 import com.coner.pixeldungeon.remake.R;
+import com.coner.pixeldungeon.support.Iap;
 import com.watabou.noosa.Game;
 import com.watabou.noosa.audio.Sample;
+import com.watabou.noosa.ui.Component;
 import com.watabou.pixeldungeon.Assets;
 import com.watabou.pixeldungeon.Dungeon;
 import com.watabou.pixeldungeon.ResultDescriptions;
@@ -67,6 +70,7 @@ import com.watabou.utils.Random;
 import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.List;
+import java.util.Locale;
 import java.util.Set;
 
 public abstract class Char extends Actor {
@@ -603,7 +607,8 @@ public abstract class Char extends Actor {
 
 	public void hp(int hP) {
 		HP = Scrambler.scramble(hP);
-	}
+
+    }
 
 	public String getName() {
 		return name;

@@ -508,4 +508,15 @@
     <!-- STRINGS OF Toolbar CLASS -->
     <string name="Toolbar_Info1">You don\'t know what is there.</string>
     <string name="Toolbar_Info2">Select a cell to examine</string>
+    <string name="AccessoryInfo">Accessory Info</string>
+    <string name="this_bowknot_gives_additional_attack_skill">This bowknot gives +1 additional attack skill</string>
+    <string name="This_Capotain_gives_defence_skill">This Capotain gives +1 defence skill</string>
+    <string name="This_Fez_gives_10_additional_HP">This Fez gives +10 additional HP</string>
+    <string name="Neko_Ears_gives_5_additional_HP">Neko Ears gives +5 additional HP</string>
+    <string name="This_Nightcap_gives_2_additional_defense_skill">This Nightcap gives +2 additional defense skill</string>
+    <string name="This_Pirate_Set_gives_additional_2_attack_skill_2_defense_skill_and_10_HP">This Pirate Set gives additional +2 attack skill, +2 defense skill and +10 HP</string>
+    <string name="This_Pumpkin_gives_additional_2_defense_skill_1_attack_skill_and_10_HP">This Pumpkin gives additional +2 defense skill, +1 attack skill and +10 HP</string>
+    <string name="This_Rabbit_Ears_gives_additional_4_defense_skill">This Rabbit Ears gives additional +4 defense skill</string>
+    <string name="This_Shades_gives_additional_2_defense_skill_and_10_HP">This Shades gives additional +2 defense skill and +10 HP</string>
+    <string name="This_Wizard_Hat_gives_additional_10_attack_skill_and_10_HP">This Wizard Hat gives additional +10 attack skill and +10 HP</string>
 </resources>

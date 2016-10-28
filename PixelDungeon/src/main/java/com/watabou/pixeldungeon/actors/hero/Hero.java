@@ -20,10 +20,13 @@ package com.watabou.pixeldungeon.actors.hero;
 import android.support.annotation.NonNull;
 
 import com.coner.android.util.Scrambler;
+import com.coner.pixeldungeon.items.accessories.Accessory;
 import com.coner.pixeldungeon.items.chaos.IChaosItem;
 import com.coner.pixeldungeon.items.common.RatKingCrown;
 import com.coner.pixeldungeon.items.common.armor.SpiderArmor;
 import com.coner.pixeldungeon.items.guts.HeartOfDarkness;
+import com.coner.pixeldungeon.mobs.spiders.SpiderServant;
+import com.coner.pixeldungeon.remake.BuildConfig;
 import com.coner.pixeldungeon.remake.EventCollector;
 import com.coner.pixeldungeon.remake.R;
 import com.coner.pixeldungeon.mobs.guts.SpiritOfPain;
@@ -125,6 +128,7 @@ import com.watabou.utils.Random;
 
 import java.util.ArrayList;
 import java.util.Collection;
+import java.util.List;
 import java.util.Set;
 
 public class Hero extends Char {
@@ -173,6 +177,7 @@ public class Hero extends Char {
 	private int STR;
 	public boolean weakened = false;
 
+    boolean hasPetAccessory = false;
 	private float awareness;
 
 	private int lvl = Scrambler.scramble(1);
@@ -194,7 +199,6 @@ public class Hero extends Char {
 		name = Game.getVar(R.string.Hero_Name);
 		name_objective = Game.getVar(R.string.Hero_Name_Objective);
 
-		STR(STARTING_STR);
 		awareness = 0.1f;
 
 		belongings = new Belongings(this);
@@ -209,10 +213,34 @@ public class Hero extends Char {
 		int hp_calc = (int) (30f / (1f + (10f/difficulty)));
 		if (getDifficulty() != 0) {
 			hp(ht(30));
+			STR(STARTING_STR);
 		} else {
 			hp(ht(40));
+			STR((int) (STARTING_STR * 1.1f) );
 		}
+
+		List<String> accessories = Accessory.getAccessoriesList();
+
+		//List
+		for (final String item : accessories) {
+			Accessory accessory = Accessory.getByName(item);
+
+			if (accessory.haveIt())
+            {
+			    hp(hp() + accessory.getAdditionalHP());
+
+                attackSkill = attackSkill + accessory.getAdditionalAttackSkill();
+                defenseSkill = defenseSkill + accessory.getAdditionalDefenseSkill();
+
+                if (accessory.hasPet()) {
+                   hasPetAccessory = true;
+                }
+            }
+		}
+
+		ht(hp());
 		live();
+
 	}
 
 	@Override
@@ -251,6 +279,13 @@ public class Hero extends Char {
 				}
 			}
 		}
+
+        //cc
+        if (alivePets.isEmpty() && hasPetAccessory){
+            Mob pet = Mob.makePet(new SpiderServant(), this);
+            alivePets.add(pet);
+        }
+
 		pets = alivePets;
 	}
 
