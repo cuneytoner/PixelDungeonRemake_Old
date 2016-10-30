@@ -40,8 +40,10 @@ import com.watabou.pixeldungeon.items.potions.PotionOfLiquidFlame;
 import com.watabou.pixeldungeon.items.potions.PotionOfStrength;
 import com.watabou.pixeldungeon.items.potions.PotionOfToxicGas;
 import com.watabou.pixeldungeon.items.rings.RingOfShadows;
+import com.watabou.pixeldungeon.items.scrolls.Scroll;
 import com.watabou.pixeldungeon.items.scrolls.ScrollOfIdentify;
 import com.watabou.pixeldungeon.items.scrolls.ScrollOfMagicMapping;
+import com.watabou.pixeldungeon.items.scrolls.ScrollOfSummon;
 import com.watabou.pixeldungeon.items.scrolls.ScrollOfWeaponUpgrade;
 import com.watabou.pixeldungeon.items.wands.WandOfMagicMissile;
 import com.watabou.pixeldungeon.items.weapon.melee.Dagger;
@@ -90,25 +92,25 @@ public enum HeroClass {
 		initCommon(hero);
 
 		switch (this) {
-		case WARRIOR:
-			initWarrior(hero);
-			break;
+			case WARRIOR:
+				initWarrior(hero);
+				break;
 
-		case MAGE:
-			initMage(hero);
-			break;
+			case MAGE:
+				initMage(hero);
+				break;
 
-		case ROGUE:
-			initRogue(hero);
-			break;
+			case ROGUE:
+				initRogue(hero);
+				break;
 
-		case HUNTRESS:
-			initHuntress(hero);
-			break;
+			case HUNTRESS:
+				initHuntress(hero);
+				break;
 
-		case ELF:
-			initElf(hero);
-			break;
+			case ELF:
+				initElf(hero);
+				break;
 		}
 
 		hero.setGender(getGender());
@@ -141,17 +143,19 @@ public enum HeroClass {
 		hero.hp(1000);
 		hero.attackSkill = 1000;
 		hero.defenseSkill = 1000;*/
-        //hero.hasPetAccessory = true;
+		//hero.hasPetAccessory = true;
+		Scroll scroll = new ScrollOfSummon();
+		hero.collect(scroll);
 
-        List<String> accessories = Accessory.getAccessoriesList();
+		List<String> accessories = Accessory.getAccessoriesList();
 
 		//List
 		for (final String item : accessories) {
 			Accessory accessory = Accessory.getByName(item);
 			accessory.ownIt(true);
-		   }
-
 		}
+
+	}
 
 	private static void initCommon(Hero hero) {
 		(hero.belongings.armor = new ClothArmor()).identify();
@@ -162,16 +166,16 @@ public enum HeroClass {
 
 	public Badges.Badge masteryBadge() {
 		switch (this) {
-		case WARRIOR:
-			return Badges.Badge.MASTERY_WARRIOR;
-		case MAGE:
-			return Badges.Badge.MASTERY_MAGE;
-		case ROGUE:
-			return Badges.Badge.MASTERY_ROGUE;
-		case HUNTRESS:
-			return Badges.Badge.MASTERY_HUNTRESS;
-		case ELF:
-			return Badges.Badge.MASTERY_ELF;
+			case WARRIOR:
+				return Badges.Badge.MASTERY_WARRIOR;
+			case MAGE:
+				return Badges.Badge.MASTERY_MAGE;
+			case ROGUE:
+				return Badges.Badge.MASTERY_ROGUE;
+			case HUNTRESS:
+				return Badges.Badge.MASTERY_HUNTRESS;
+			case ELF:
+				return Badges.Badge.MASTERY_ELF;
 		}
 		return null;
 	}
@@ -244,16 +248,16 @@ public enum HeroClass {
 	public String[] perks() {
 
 		switch (this) {
-		case WARRIOR:
-			return WAR_PERKS;
-		case MAGE:
-			return MAG_PERKS;
-		case ROGUE:
-			return ROG_PERKS;
-		case HUNTRESS:
-			return HUN_PERKS;
-		case ELF:
-			return ELF_PERKS;
+			case WARRIOR:
+				return WAR_PERKS;
+			case MAGE:
+				return MAG_PERKS;
+			case ROGUE:
+				return ROG_PERKS;
+			case HUNTRESS:
+				return HUN_PERKS;
+			case ELF:
+				return ELF_PERKS;
 		}
 
 		return null;
@@ -261,13 +265,13 @@ public enum HeroClass {
 
 	public int getGender() {
 		switch (this) {
-		case WARRIOR:
-		case MAGE:
-		case ROGUE:
-		case ELF:
-			return Utils.MASCULINE;
-		case HUNTRESS:
-			return Utils.FEMININE;
+			case WARRIOR:
+			case MAGE:
+			case ROGUE:
+			case ELF:
+				return Utils.MASCULINE;
+			case HUNTRESS:
+				return Utils.FEMININE;
 		}
 		return Utils.NEUTER;
 	}

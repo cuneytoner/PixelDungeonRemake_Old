@@ -287,7 +287,7 @@ public class Iap {
 
     static void complain(String message) {
         EventCollector.logEvent("iap error", message);
-        Log.e("GAME", "**** IAP Error: " + message);
+        //Log.e("GAME", "**** IAP Error: " + message);
     }
 
     public static boolean onActivityResult(int requestCode, int resultCode, Intent data) {

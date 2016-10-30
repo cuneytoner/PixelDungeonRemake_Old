@@ -219,7 +219,7 @@
     <string name="WndStory_Metropolis">Cüce Metropolis\'i cüce eyaletleri arasında en şanlısıydı.Cüceler doruk noktasında , mekanize orduları ile Eski Tanrı ve onun şeytan ordusunu yendiler. Ancak zaferle geri dönen savaşçılar bozulmanın tohumlarını yanlarında getirdiler. Bu zafer cüce yeraltı şehrinin sonunun başlanıgıcı oldu.</string>
     <string name="WndStory_Halls">Geçmişte bu bölge Metropolis\'in dış yerleşimleriydi. Pahalıya malolan zafer sonrasında , cüceler bu bölgelerdeki Eski Tanrı ve şeytani kalıntılarını temizlemek için güçsüz düştüler. Burada tutunan şetyani güçlerden sonra burası Şeytan Salonları olarak anıldı.\n\nÇok az maceraperest bu seviyelere ulaşabilmiştir...</string>
     <string name="WndStory_Spiders">Yıllar burada önce sihirli taşlarla dolu bir maden vardı.Maden tükendikten sonra burada geride sadece tüneller ağı kaldı ve bu tüneller örümcekler tarafından dolduruldu. Tehlikelerine rahmen buralarda sihirli nesnelerin söylentisi cesur olanları buraya çekmeye yetiyor. Bir zamanlar şeytani bir cadı peşindekilerden kaçarak bu tünellere girdi, peşindeki batıl inançlı insanlar girmeye cesaret edemedi ve beklemeye karar verdi, ama cadı asla geri dönmedi. Belki de cadı başka bir çıkış yolu bulmuştur veya buradaki yaratıklar tarafından yok edilmiştir.</string>
-    
+
     <!-- STRINGS OF WndTradeItem CLASS -->
     <string name="WndTradeItem_Sale">SATILIK: %1$s - %2$dg</string>
     <string name="WndTradeItem_Buy">%dg altına al</string>
@@ -370,7 +370,7 @@
     <string name="CorpseDust_Name">ceset tozu</string>
     <string name="CorpseDust_Info">Ceset tozu , diğer toz topaklarından farklı görünmüyor. Belkide bir şekilde bundan kurtulman en iyisi</string>
     <string name="CorpseDust_Info2">Sadece tutmak bile seni endişeli ve sinirli yapıyor</string>
-	
+
     <!-- STRINGS OF DarkGold CLASS -->
     <string name="DarkGold_Name">kara altın damarı</string>
     <string name="DarkGold_Info">Bu metal sadece renginden dolayı kara olarak anılmıyor, gün ışığında erimesinden dolayı yüzeyden tamamen kullanışsız</string>
@@ -378,7 +378,7 @@
     <!-- STRINGS OF DriedRose CLASS -->
     <string name="DriedRose_Name">kuru gül</string>
     <string name="DriedRose_Info">Bu gül uzun zaman önce kurumuş, fakat nasıl olduysa tüm yaprakları üzerinde.</string>
-	<string name="DriedRose_Info2"> Çekiciliğinden hiç birşey kaybetmemiş. Sonsuza kadar saklamak isteyeceğin kadar çekici görünüyor.</string>
+    <string name="DriedRose_Info2"> Çekiciliğinden hiç birşey kaybetmemiş. Sonsuza kadar saklamak isteyeceğin kadar çekici görünüyor.</string>
 
     <!-- STRINGS OF DwarfToken CLASS -->
     <string name="DwarfToken_Name">cüce simgesi</string>
@@ -394,7 +394,7 @@
     <!-- STRINGS OF RatSkull CLASS -->
     <string name="RatSkull_Name">dev sıçan kafatası</string>
     <string name="RatSkull_Info">Eğer çok kötü kokmasaydı iyi bir av hatırası olabilirdi.</string>
-	<string name="RatSkull_Info2"> Diğer yandan bunu yapanın büyük ve kokuşuk sıçanları öldürebileceğini gösteriyor.</string>
+    <string name="RatSkull_Info2"> Diğer yandan bunu yapanın büyük ve kokuşuk sıçanları öldürebileceğini gösteriyor.</string>
 
     <!-- PACKAGE /actors/blobs -->
     <!-- STRINGS OF MissileWeapon CLASS -->
@@ -543,4 +543,7 @@
     <string name="This_Rabbit_Ears_gives_additional_4_defense_skill">Bu tavşan kulakları +4 savunma puanı verir</string>
     <string name="This_Shades_gives_additional_2_defense_skill_and_10_HP">Bu gözlükler +2 savunma ve +10 can puanı verir</string>
     <string name="This_Wizard_Hat_gives_additional_10_attack_skill_and_10_HP">Bu büyücü şapkası +10 saldırı ve +10 can puanı verir</string>
+    <string name="ScrollOfSummon_Info">Bu parşömeni okuduğunda seni koruyacak bir evcil hayvan çağırmanı sağlar. Yeterince şanslıysan bu çok güçlü bir yaratıkta olabilir</string>
+    <string name="ScrollOfSummon_Info1">Parşomen güçlü bir enerji yayıyor.</string>
+    <string name="ScrollOfSummon_Name">Çağırma parşömeni</string>
 </resources>

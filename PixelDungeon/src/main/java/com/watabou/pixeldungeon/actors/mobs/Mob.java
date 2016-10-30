@@ -22,6 +22,8 @@ import android.support.annotation.NonNull;
 import com.coner.android.util.ModdingMode;
 import com.coner.android.util.TrackedRuntimeException;
 import com.coner.pixeldungeon.items.necropolis.BlackSkull;
+import com.coner.pixeldungeon.mobs.common.MobFactory;
+import com.coner.pixeldungeon.mobs.spiders.SpiderServant;
 import com.coner.pixeldungeon.remake.R;
 import com.watabou.noosa.Game;
 import com.watabou.pixeldungeon.Badges;
@@ -886,5 +888,16 @@ public abstract class Mob extends Char {
 
 	protected void setEnemy(@NonNull Char enemy) {
 		this.enemy = enemy;
+	}
+
+	public static Mob randomPet(Hero hero) throws IllegalAccessException, InstantiationException {
+		Mob pet;
+		do {
+			pet = MobFactory.mobClassRandom().newInstance();
+		} while (pet.canBePet());
+
+		pet.setFraction(Fraction.HEROES);
+		hero.addPet(pet);
+		return pet;
 	}
 }

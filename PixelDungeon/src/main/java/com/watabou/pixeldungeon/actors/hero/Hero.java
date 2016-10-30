@@ -116,6 +116,7 @@ import com.watabou.pixeldungeon.scenes.InterlevelScene;
 import com.watabou.pixeldungeon.scenes.SurfaceScene;
 import com.watabou.pixeldungeon.sprites.CharSprite;
 import com.watabou.pixeldungeon.sprites.HeroSpriteDef;
+import com.watabou.pixeldungeon.sprites.MobSprite;
 import com.watabou.pixeldungeon.ui.AttackIndicator;
 import com.watabou.pixeldungeon.ui.BuffIndicator;
 import com.watabou.pixeldungeon.ui.QuickSlot;
@@ -177,7 +178,7 @@ public class Hero extends Char {
 	private int STR;
 	public boolean weakened = false;
 
-    boolean hasPetAccessory = false;
+	boolean hasPetAccessory = false;
 	private float awareness;
 
 	private int lvl = Scrambler.scramble(1);
@@ -226,16 +227,16 @@ public class Hero extends Char {
 			Accessory accessory = Accessory.getByName(item);
 
 			if (accessory.haveIt())
-            {
-			    hp(hp() + accessory.getAdditionalHP());
+			{
+				hp(hp() + accessory.getAdditionalHP());
 
-                attackSkill = attackSkill + accessory.getAdditionalAttackSkill();
-                defenseSkill = defenseSkill + accessory.getAdditionalDefenseSkill();
+				attackSkill = attackSkill + accessory.getAdditionalAttackSkill();
+				defenseSkill = defenseSkill + accessory.getAdditionalDefenseSkill();
 
-                if (accessory.hasPet()) {
-                   hasPetAccessory = true;
-                }
-            }
+				if (accessory.hasPet()) {
+					hasPetAccessory = true;
+				}
+			}
 		}
 
 		ht(hp());
@@ -280,11 +281,17 @@ public class Hero extends Char {
 			}
 		}
 
-        //cc
-        if (alivePets.isEmpty() && hasPetAccessory){
-            Mob pet = Mob.makePet(new SpiderServant(), this);
-            alivePets.add(pet);
-        }
+		//cc
+		if (alivePets.isEmpty() && hasPetAccessory){
+			Mob pet;
+			try {
+				pet = Mob.randomPet(this);
+			} catch (Exception e) {
+				pet = Mob.makePet(new SpiderServant(), this);
+			}
+
+			alivePets.add(pet);
+		}
 
 		pets = alivePets;
 	}

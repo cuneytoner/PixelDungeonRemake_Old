@@ -19,6 +19,7 @@ package com.watabou.pixeldungeon;
 
 import com.coner.pixeldungeon.remake.R;
 import com.watabou.noosa.Game;
+import com.watabou.pixeldungeon.items.scrolls.Scroll;
 import com.watabou.utils.Bundle;
 
 import org.json.JSONException;
@@ -91,7 +92,7 @@ public class Assets {
 	public static final String SHADOW = "shadow.png";
 
 	public static final String SPIDER_QUEEN = "spider_queen.png";
-	public static final String SPIDER_EGG = "spider_egg.png";	
+	public static final String SPIDER_EGG = "spider_egg.png";
 	public static final String SPIDER_NEST = "spider_nest.png";
 
 	public static final String ITEMS = "items.png";
@@ -151,6 +152,7 @@ public class Assets {
 	public static final String SND_LIGHTNING = "snd_lightning.mp3";
 	public static final String SND_LEVELUP = "snd_levelup.mp3";
 	public static final String SND_DEATH = "snd_death.mp3";
+	public static final String SND_SUMMON = "snd_summon.mp3";
 	public static final String SND_CHALLENGE = "snd_challenge.mp3";
 	public static final String SND_CURSED = "snd_cursed.mp3";
 	public static final String SND_TRAP = "snd_trap.mp3";
@@ -175,7 +177,7 @@ public class Assets {
 	public static final String SND_BONES = "snd_bones.mp3";
 	public static final String SND_MIMIC = "snd_mimic.mp3";
 	public static final String SND_BITE = "snd_bite.mp3";
-	
+
 	public static final String SND_DOMINANCE = "snd_dominance.mp3";
 	public static final String SND_ROTTEN_DROP = "snd_rotten_drop.mp3";
 	public static final String SND_CRYSTAL = "snd_crystal.mp3";
@@ -184,7 +186,7 @@ public class Assets {
 	private static int statusType = 0;
 	private static int toolbarType = 0;
 	private static int bannersType = 0;
-	
+
 	static {
 		Bundle premiumSettings;
 		try {
@@ -196,57 +198,57 @@ public class Assets {
 		} catch (JSONException e) {
 		}
 	}
-	
+
 	public static String getBanners() {
 		switch (bannersType) {
-		default:
-			return BANNERS_PREFIX+"banners.png";
-		case 1:
-			return BANNERS_PREFIX+"banners_supporter_1.png";
-		case 2:
-			return BANNERS_PREFIX+"banners_supporter_2.png";
-		case 3:
-			return BANNERS_PREFIX+"banners_supporter_3.png";
+			default:
+				return BANNERS_PREFIX+"banners.png";
+			case 1:
+				return BANNERS_PREFIX+"banners_supporter_1.png";
+			case 2:
+				return BANNERS_PREFIX+"banners_supporter_2.png";
+			case 3:
+				return BANNERS_PREFIX+"banners_supporter_3.png";
 		}
 	}
 
-	
+
 	public static String getChrome() {
 		switch (chromeType) {
-		default:
-			return "chrome.png";
-		case 1:
-			return "chrome_supporter_1.png";
-		case 2:
-			return "chrome_supporter_2.png";
-		case 3:
-			return "chrome_supporter_3.png";
+			default:
+				return "chrome.png";
+			case 1:
+				return "chrome_supporter_1.png";
+			case 2:
+				return "chrome_supporter_2.png";
+			case 3:
+				return "chrome_supporter_3.png";
 		}
 	}
 
 	public static String getStatus() {
 		switch (statusType) {
-		default:
-			return "status_pane.png";
-		case 1:
-			return "status_pane_supporter_1.png";
-		case 2:
-			return "status_pane_supporter_2.png";
-		case 3:
-			return "status_pane_supporter_3.png";
+			default:
+				return "status_pane.png";
+			case 1:
+				return "status_pane_supporter_1.png";
+			case 2:
+				return "status_pane_supporter_2.png";
+			case 3:
+				return "status_pane_supporter_3.png";
 		}
 	}
 
 	public static String getToolbar() {
 		switch (toolbarType) {
-		default:
-			return "toolbar.png";
-		case 1:
-			return "toolbar_supporter_1.png";
-		case 2:
-			return "toolbar_supporter_2.png";
-		case 3:
-			return "toolbar_supporter_3.png";
+			default:
+				return "toolbar.png";
+			case 1:
+				return "toolbar_supporter_1.png";
+			case 2:
+				return "toolbar_supporter_2.png";
+			case 3:
+				return "toolbar_supporter_3.png";
 		}
 	}
 
@@ -257,22 +259,22 @@ public class Assets {
 		if(assetKind.equals(KEY_STATUS)) {
 			statusType = index;
 		}
-		
+
 		if(assetKind.equals(KEY_TOOLBAR)) {
 			toolbarType = index;
 		}
-		
+
 		if(assetKind.equals(KEY_BANNERS)) {
 			bannersType = index;
 		}
-		
+
 		Bundle premiumSettings = new Bundle();
 		premiumSettings.put(KEY_CHROME, chromeType);
 		premiumSettings.put(KEY_STATUS, statusType);
 		premiumSettings.put(KEY_TOOLBAR, toolbarType);
 		premiumSettings.put(KEY_BANNERS, bannersType);
-		
+
 		Preferences.INSTANCE.put(Preferences.KEY_PREMIUM_SETTINGS, premiumSettings.toString());
-		
+
 	}
 }
