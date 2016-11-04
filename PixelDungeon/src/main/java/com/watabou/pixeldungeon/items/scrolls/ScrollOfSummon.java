@@ -14,7 +14,7 @@ import com.watabou.pixeldungeon.utils.GLog;
  * Created by cc on 30.10.2016.
  */
 
-public class ScrollOfSummon1 extends Scroll {
+public class ScrollOfSummon extends Scroll {
 
     @Override
     protected void doRead() {

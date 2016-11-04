@@ -38,7 +38,7 @@ import com.watabou.pixeldungeon.items.rings.RingOfShadows;
 import com.watabou.pixeldungeon.items.scrolls.Scroll;
 import com.watabou.pixeldungeon.items.scrolls.ScrollOfIdentify;
 import com.watabou.pixeldungeon.items.scrolls.ScrollOfMagicMapping;
-import com.watabou.pixeldungeon.items.scrolls.ScrollOfSummon1;
+import com.watabou.pixeldungeon.items.scrolls.ScrollOfSummon;
 import com.watabou.pixeldungeon.items.wands.WandOfMagicMissile;
 import com.watabou.pixeldungeon.items.weapon.melee.Dagger;
 import com.watabou.pixeldungeon.items.weapon.melee.Knuckles;
@@ -138,7 +138,7 @@ public enum HeroClass {
 		hero.attackSkill = 1000;
 		hero.defenseSkill = 1000;*/
 		//hero.hasPetAccessory = true;
-		Scroll scroll = new ScrollOfSummon1();
+		Scroll scroll = new ScrollOfSummon();
 		hero.collect(scroll);
 
 		List<String> accessories = Accessory.getAccessoriesList();
