@@ -150,7 +150,6 @@ public class MobFactory {
 		registerMobClass(Lich.class);
 		registerMobClass(RunicSkull.class);
 		registerMobClass(Zombie.class);
-
 		registerMobClass(Hedgehog.class);
 	}
 	

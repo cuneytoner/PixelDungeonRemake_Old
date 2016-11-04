@@ -62,6 +62,11 @@ public class YogsHeart extends Boss {
         return super.defenseProc(enemy, damage);
     }
 
+    @Override
+    public boolean canBePet(){
+        return false;
+    }
+
 	@Override
 	public boolean act() {
 

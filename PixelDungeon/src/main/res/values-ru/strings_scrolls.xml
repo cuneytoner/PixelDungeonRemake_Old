@@ -23,6 +23,7 @@
     <item>ИВАЗ</item>
     <item>АЛГИЗ</item>
     <item>ДАГАЗ</item>
+    <item>САХЕЗ</item>
   </string-array>
   <!--STRINGS OF InventoryScroll CLASS-->
   <string name="InventoryScroll_Title">Выбери предмет</string>

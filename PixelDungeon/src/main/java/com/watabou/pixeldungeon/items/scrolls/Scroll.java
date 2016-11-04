@@ -50,7 +50,7 @@ public abstract class Scroll extends Item {
 			ScrollOfTeleportation.class,
 			ScrollOfUpgrade.class,
 			ScrollOfChallenge.class,
-			ScrollOfSummon.class,
+			ScrollOfSummon1.class,
 			ScrollOfTerror.class,
 			ScrollOfLullaby.class,
 			ScrollOfWeaponUpgrade.class,
@@ -68,7 +68,7 @@ public abstract class Scroll extends Item {
 			ScrollOfTeleportation.class,
 			ScrollOfUpgrade.class,
 			ScrollOfChallenge.class,
-			ScrollOfSummon.class,
+			ScrollOfSummon1.class,
 			ScrollOfTerror.class,
 			ScrollOfLullaby.class,
 			ScrollOfPsionicBlast.class,
@@ -95,7 +95,9 @@ public abstract class Scroll extends Item {
 			ItemSpriteSheet.SCROLL_ANSUZ,
 			ItemSpriteSheet.SCROLL_IWAZ,
 			ItemSpriteSheet.SCROLL_ALGIZ,
-			ItemSpriteSheet.SCROLL_DAGAZ};
+			ItemSpriteSheet.SCROLL_DAGAZ,
+			ItemSpriteSheet.SCROLL_SAHEZ
+	};
 
 	private static ItemStatusHandler<Scroll> handler;
 

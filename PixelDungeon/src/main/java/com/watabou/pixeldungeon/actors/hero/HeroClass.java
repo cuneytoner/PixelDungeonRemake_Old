@@ -20,9 +20,6 @@ package com.watabou.pixeldungeon.actors.hero;
 
 import com.coner.android.util.TrackedRuntimeException;
 import com.coner.pixeldungeon.items.accessories.Accessory;
-import com.coner.pixeldungeon.items.guts.weapon.melee.Claymore;
-import com.coner.pixeldungeon.items.necropolis.BlackSkull;
-import com.coner.pixeldungeon.items.necropolis.BladeOfSouls;
 import com.coner.pixeldungeon.remake.BuildConfig;
 import com.coner.pixeldungeon.remake.R;
 import com.watabou.noosa.Game;
@@ -36,15 +33,12 @@ import com.watabou.pixeldungeon.items.armor.MageArmor;
 import com.watabou.pixeldungeon.items.armor.RogueArmor;
 import com.watabou.pixeldungeon.items.armor.WarriorArmor;
 import com.watabou.pixeldungeon.items.food.Ration;
-import com.watabou.pixeldungeon.items.potions.PotionOfLiquidFlame;
 import com.watabou.pixeldungeon.items.potions.PotionOfStrength;
-import com.watabou.pixeldungeon.items.potions.PotionOfToxicGas;
 import com.watabou.pixeldungeon.items.rings.RingOfShadows;
 import com.watabou.pixeldungeon.items.scrolls.Scroll;
 import com.watabou.pixeldungeon.items.scrolls.ScrollOfIdentify;
 import com.watabou.pixeldungeon.items.scrolls.ScrollOfMagicMapping;
-import com.watabou.pixeldungeon.items.scrolls.ScrollOfSummon;
-import com.watabou.pixeldungeon.items.scrolls.ScrollOfWeaponUpgrade;
+import com.watabou.pixeldungeon.items.scrolls.ScrollOfSummon1;
 import com.watabou.pixeldungeon.items.wands.WandOfMagicMissile;
 import com.watabou.pixeldungeon.items.weapon.melee.Dagger;
 import com.watabou.pixeldungeon.items.weapon.melee.Knuckles;
@@ -144,7 +138,7 @@ public enum HeroClass {
 		hero.attackSkill = 1000;
 		hero.defenseSkill = 1000;*/
 		//hero.hasPetAccessory = true;
-		Scroll scroll = new ScrollOfSummon();
+		Scroll scroll = new ScrollOfSummon1();
 		hero.collect(scroll);
 
 		List<String> accessories = Accessory.getAccessoriesList();

@@ -52,6 +52,7 @@ public class Accessory {
 		registerAccessory(Shades.class);
 		registerAccessory(NekoEars.class);
 		registerAccessory(PirateSet.class);
+		registerAccessory(SantaHat.class);
 	}
 
 	public static List<String> getAccessoriesList() {

@@ -23,6 +23,7 @@
     <item>IWAZ</item>
     <item>ALGIZ</item>
     <item>DAGAZ</item>
+    <item>SAHEZ</item>
   </string-array>
   <!--STRINGS OF InventoryScroll CLASS-->
   <string name="InventoryScroll_Title">Wybierz przedmiot</string>

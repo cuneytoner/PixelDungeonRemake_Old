@@ -891,10 +891,15 @@ public abstract class Mob extends Char {
 	}
 
 	public static Mob randomPet(Hero hero) throws IllegalAccessException, InstantiationException {
+		boolean b = false;
 		Mob pet;
 		do {
 			pet = MobFactory.mobClassRandom().newInstance();
-		} while (pet.canBePet());
+			b = pet.canBePet();
+			if (b = false) {
+				pet = null;
+			}
+		} while (b=false);
 
 		pet.setFraction(Fraction.HEROES);
 		hero.addPet(pet);

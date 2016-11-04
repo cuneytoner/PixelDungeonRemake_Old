@@ -69,7 +69,7 @@ import com.watabou.pixeldungeon.items.rings.RingOfThorns;
 import com.watabou.pixeldungeon.items.scrolls.BlankScroll;
 import com.watabou.pixeldungeon.items.scrolls.Scroll;
 import com.watabou.pixeldungeon.items.scrolls.ScrollOfChallenge;
-import com.watabou.pixeldungeon.items.scrolls.ScrollOfSummon;
+import com.watabou.pixeldungeon.items.scrolls.ScrollOfSummon1;
 import com.watabou.pixeldungeon.items.scrolls.ScrollOfCurse;
 import com.watabou.pixeldungeon.items.scrolls.ScrollOfDomination;
 import com.watabou.pixeldungeon.items.scrolls.ScrollOfIdentify;
@@ -199,7 +199,7 @@ public class Generator {
 				BlankScroll.class,
 				ScrollOfDomination.class,
 				ScrollOfCurse.class,
-				ScrollOfSummon.class,
+				ScrollOfSummon1.class,
 		};
 
 		Category.SCROLL.probs = new float[]{ 30, 10, 15, 0, 10, 15, 12, 8, 8, 0, 4, 6, 10, 8, 6, 3};

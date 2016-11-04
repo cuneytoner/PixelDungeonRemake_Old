@@ -74,6 +74,11 @@ public class YogsBrain extends Boss {
     }
 
     @Override
+    public boolean canBePet(){
+        return false;
+    }
+
+    @Override
     protected boolean doAttack( Char enemy ) {
 
         if (Dungeon.level.distance( getPos(), enemy.getPos() ) <= 1) {

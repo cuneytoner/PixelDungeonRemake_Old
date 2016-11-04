@@ -1,6 +1,6 @@
 /*
  * This file is auto-generated.  DO NOT MODIFY.
- * Original file: /mnt/datadisk/PixelDungeonRemake/PixelDungeon/src/main/aidl/com/android/vending/billing/IInAppBillingService.aidl
+ * Original file: /media/cc/cc/Projects/PixelDungeonRemake/PixelDungeon/src/main/aidl/com/android/vending/billing/IInAppBillingService.aidl
  */
 package com.android.vending.billing;
 /**

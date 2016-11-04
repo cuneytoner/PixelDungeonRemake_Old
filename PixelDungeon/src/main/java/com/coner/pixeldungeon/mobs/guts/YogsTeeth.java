@@ -64,5 +64,10 @@ public class YogsTeeth extends Boss {
     public int attackSkill( Char target ) { return 36; }
 
     @Override
+    public boolean canBePet(){
+        return false;
+    }
+
+    @Override
     public int dr() { return 21; }
 }

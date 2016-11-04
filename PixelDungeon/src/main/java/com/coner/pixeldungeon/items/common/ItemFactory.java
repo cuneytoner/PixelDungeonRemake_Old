@@ -99,7 +99,7 @@ import com.watabou.pixeldungeon.items.rings.RingOfStoneWalking;
 import com.watabou.pixeldungeon.items.rings.RingOfThorns;
 import com.watabou.pixeldungeon.items.scrolls.BlankScroll;
 import com.watabou.pixeldungeon.items.scrolls.ScrollOfChallenge;
-import com.watabou.pixeldungeon.items.scrolls.ScrollOfSummon;
+import com.watabou.pixeldungeon.items.scrolls.ScrollOfSummon1;
 import com.watabou.pixeldungeon.items.scrolls.ScrollOfCurse;
 import com.watabou.pixeldungeon.items.scrolls.ScrollOfDomination;
 import com.watabou.pixeldungeon.items.scrolls.ScrollOfIdentify;
@@ -217,7 +217,7 @@ public class ItemFactory {
 		registerItemClass(ScrollOfDomination.class);
 		registerItemClass(ScrollOfRemoveCurse.class);
 		registerItemClass(ScrollOfPsionicBlast.class);
-		registerItemClass(ScrollOfSummon.class);
+		registerItemClass(ScrollOfSummon1.class);
 		registerItemClass(PotionOfLevitation.class);
 		registerItemClass(PotionOfStrength.class);
 		registerItemClass(PotionOfMindVision.class);

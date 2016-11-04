@@ -23,6 +23,10 @@ android {
             minifyEnabled false
             signingConfig signingConfigs.release
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt'
+            lintOptions {
+                disable 'MissingTranslation'
+                disable 'ExtraTranslation'
+            }
         }
         debug {
             debuggable true

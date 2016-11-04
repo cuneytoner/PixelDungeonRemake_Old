@@ -16,7 +16,10 @@
 	<!-- STRINGS OF Fez CLASS -->
     <string name="Fez_Name">Fez</string>
     <string name="Fez_Info">It\'s a felt headdress in the shape of a truncated cone made of red felt,  with a tassel attached to the top. And no, it doesn\'t make world 3-dimensional.</string>
-	
+
+    <string name="SantaHat_Name">Santa Hat</string>
+    <string name="SantaHat_Info">Hooo.Hooo..Hooo. Do you play nicely with others?.</string>
+
 	<!-- STRINGS OF NekoEars CLASS -->
     <string name="NekoEars_Name">Neko Ears</string>
     <string name="NekoEars_Info">Sometimes you want to wash off all that monster blood and dirt and just feel cute and fluffy... Or at very least you can wear cute cat ears.</string>

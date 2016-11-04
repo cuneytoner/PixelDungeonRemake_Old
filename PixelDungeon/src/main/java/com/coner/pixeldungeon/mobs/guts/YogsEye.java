@@ -30,6 +30,11 @@ public class YogsEye extends Boss {
     }
 
     @Override
+    public boolean canBePet(){
+        return false;
+    }
+
+    @Override
     public int dr() {
         return 2;
     }
