@@ -9,7 +9,8 @@ This is fork of Pixel Dungeon Remix featuring localization, game play changes & 
 
 
 
--------------------------------------------------------------------------------.
+-------------------------------------------------------------------------------
+
 Official web-site of Pixel Dungeon Remix : http://wiki.nyrds.net
 Remixed Pixel Dungeon in Google Play: https://play.google.com/store/apps/details?id=com.nyrds.pixeldungeon.ml
 
