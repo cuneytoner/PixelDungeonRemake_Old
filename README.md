@@ -3,11 +3,10 @@ Pixel Dungeon Remake
 
 Classic roguelike with pixel graphics and simple interface.
 
-This is fork of Pixel Dungeon Remix featuring localization, game play changes & new items.
+This is fork of Remixed Pixel Dungeon ( https://github.com/NYRDS/pixel-dungeon-remix )featuring localization, 
+game play changes & new items.
 
- Pixel Dungeon Remake in Google Play: https://play.google.com/store/apps/details?id=com.coner.pixeldungeon.remake 
-
-
+Pixel Dungeon Remake in Google Play: https://play.google.com/store/apps/details?id=com.coner.pixeldungeon.remake 
 
 -------------------------------------------------------------------------------
 
