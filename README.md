@@ -10,7 +10,7 @@ Pixel Dungeon Remake in Google Play: https://play.google.com/store/apps/details?
 
 -------------------------------------------------------------------------------
 
-Official web-site of Pixel Dungeon Remix : http://wiki.nyrds.net
+Official web-site of Remixed Pixel Dungeon : http://wiki.nyrds.net
 
 Remixed Pixel Dungeon in Google Play: https://play.google.com/store/apps/details?id=com.nyrds.pixeldungeon.ml
 
