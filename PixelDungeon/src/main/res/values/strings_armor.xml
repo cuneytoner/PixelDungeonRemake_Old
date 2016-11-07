@@ -26,6 +26,12 @@
     <string name="ClothArmor_Name">cloth armor</string>
     <string name="ClothArmor_Desc">This lightweight armor offers basic protection.</string>
 
+    <!-- STRINGS OF ClericArmor CLASS -->
+    <string name="ClericArmor_Name">Cleric Cloak</string>
+    <string name="ClericArmor_Desc">With the help of this mantle, the Cleric can summon the forces of the Gods.Cleric can use this power to regenrate health</string>
+    <string name="ClericArmor_ACSpecial">HEALTH FLOWS</string>
+    <string name="ClericArmor_NotCleric">Only clerics can use this armor!</string>
+
     <!-- STRINGS OF ElfArmor CLASS -->
     <string name="ElfArmor_Name">Elven mantle</string>
     <string name="ElfArmor_Desc">With the help of this mantle, the elf can summon the forces of nature itself. High grass will grow in the blink of an eye even through solid stone, immobilizing all enemies in sight.</string>

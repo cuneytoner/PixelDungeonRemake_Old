@@ -45,8 +45,10 @@ public enum HeroSubClass {
 	SNIPER(    Game.getVar(R.string.HeroSubClass_NameSnip),   Game.getVar(R.string.HeroSubClass_DescSnip), SniperArmor.class),
 	WARDEN(    Game.getVar(R.string.HeroSubClass_NameWard),   Game.getVar(R.string.HeroSubClass_DescWard), WardenArmor.class),
 	SCOUT(     Game.getVar(R.string.HeroSubClass_NameScout),  Game.getVar(R.string.HeroSubClass_DescScout), ScoutArmor.class),
-	SHAMAN(    Game.getVar(R.string.HeroSubClass_NameShaman), Game.getVar(R.string.HeroSubClass_DescShaman), ShamanArmor.class);
-	
+	SHAMAN(    Game.getVar(R.string.HeroSubClass_NameShaman), Game.getVar(R.string.HeroSubClass_DescShaman), ShamanArmor.class),
+	PALADIN(     Game.getVar(R.string.HeroSubClass_NamePaladin),  Game.getVar(R.string.HeroSubClass_DescScout), ScoutArmor.class),
+	ARCPRIEST(    Game.getVar(R.string.HeroSubClass_NameArcPriest), Game.getVar(R.string.HeroSubClass_DescShaman), ShamanArmor.class);
+
 	private String title;
 	private String desc;
 	private Class<? extends ClassArmor> armorClass;

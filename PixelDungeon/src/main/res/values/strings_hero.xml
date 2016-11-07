@@ -33,6 +33,7 @@
     <string name="HeroClass_Rog">rogue</string>
     <string name="HeroClass_Hun">huntress</string>
     <string name="HeroClass_Elf">elf</string>
+    <string name="HeroClass_Cleric">cleric</string>
 
     <string-array name="HeroClass_WarPerks">
         <item>Warriors start with 11 points of Strength.</item>
@@ -70,6 +71,13 @@
         <item>Elves are extremely proficient with bows and are agile.</item>
         <item>Elves are less proficient with melee weapons.</item>>
     </string-array>
+    <string-array name="HeroClass_ClericPerks">
+        <item>Clerics start with 25 HP and 7 STR.</item>
+        <item>Clerics are immune to poison.</item>
+        <item>Clerics start with an upgraded wand.</item>
+        <item>Clerics are extremely regenerates healths.</item>
+        <item>Clerics are less proficient with melee weapons.</item>>
+    </string-array>
 
     <!-- STRINGS OF HeroSubClass CLASS -->
     <string name="HeroSubClass_NameGlad">gladiator</string>
@@ -92,5 +100,9 @@
     <string name="HeroSubClass_DescScout">Elven _Scouts_ are masters of stealth. Trampling high grass grants them a temporary invisibility buff. Also they are even faster than regular Elves.</string>
     <string name="HeroSubClass_NameShaman">shaman</string>
     <string name="HeroSubClass_DescShaman">Elven _Shamans_ can use wands as melee weapons. Successful hits have a chance to activate the wand\'s power on a target without using a charge.</string>
-    
+    <string name="HeroSubClass_NamePaladin">Paladin</string>
+    <string name="HeroSubClass_DescPaladin">Elven _Scouts_ are masters of stealth. Trampling high grass grants them a temporary invisibility buff. Also they are even faster than regular Elves.</string>
+    <string name="HeroSubClass_NameArcPriest">shaman</string>
+    <string name="HeroSubClass_DescArcPriest">Elven _Shamans_ can use wands as melee weapons. Successful hits have a chance to activate the wand\'s power on a target without using a charge.</string>
+
 </resources>

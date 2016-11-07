@@ -24,6 +24,7 @@ import com.coner.pixeldungeon.remake.R;
 import com.watabou.pixeldungeon.ResultDescriptions;
 import com.watabou.pixeldungeon.actors.Char;
 import com.watabou.pixeldungeon.actors.hero.Hero;
+import com.watabou.pixeldungeon.actors.hero.HeroClass;
 import com.watabou.pixeldungeon.items.rings.RingOfElements.Resistance;
 import com.watabou.pixeldungeon.ui.BuffIndicator;
 import com.watabou.pixeldungeon.utils.GLog;
@@ -62,7 +63,20 @@ public class Poison extends Buff implements Hero.Doom {
 	public String toString() {
 		return Game.getVar(R.string.Poison_Info);
 	}
-	
+
+	@Override
+	public boolean attachTo( Char target ) {
+		if (target instanceof Hero && ((Hero)target).heroClass == HeroClass.CLERIC){
+			return false;
+		}
+
+		if ( super.attachTo( target )) {
+			return true;
+		} else {
+			return false;
+		}
+	}
+
 	@Override
 	public boolean act() {
 		if (target.isAlive()) {

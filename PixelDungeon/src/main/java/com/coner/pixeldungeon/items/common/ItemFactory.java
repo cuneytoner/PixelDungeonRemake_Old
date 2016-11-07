@@ -34,6 +34,7 @@ import com.watabou.pixeldungeon.items.armor.BattleMageArmor;
 import com.watabou.pixeldungeon.items.armor.BerserkArmor;
 import com.watabou.pixeldungeon.items.armor.ClothArmor;
 import com.watabou.pixeldungeon.items.armor.ElfArmor;
+import com.watabou.pixeldungeon.items.armor.ClericArmor;
 import com.watabou.pixeldungeon.items.armor.FreeRunnerArmor;
 import com.watabou.pixeldungeon.items.armor.GladiatorArmor;
 import com.watabou.pixeldungeon.items.armor.HuntressArmor;
@@ -313,6 +314,7 @@ public class ItemFactory {
 		registerItemClass(SniperArmor.class);
 		registerItemClass(ShamanArmor.class);
 		registerItemClass(ElfArmor.class);
+		registerItemClass(ClericArmor.class);
 		registerItemClass(ScoutArmor.class);
 		registerItemClass(BerserkArmor.class);
 		registerItemClass(RogueArmor.class);

@@ -59,7 +59,8 @@ public enum Icons {
 	MODDING_MODE,
 	QUIVER,
 	MIND_CONTROL,
-	GRAPHS;
+	GRAPHS,
+    CLERIC;
 
 	
 	public Image get() {
@@ -180,6 +181,9 @@ public enum Icons {
 		case GRAPHS:
 			icon.frame( icon.texture.uvRect( 41,63,  51,73 ) );
 			break;
+        case CLERIC:
+            icon.frame( icon.texture.uvRect( 16, 29, 32, 45 ) );
+            break;
 		}
 		return icon;
 	}
@@ -196,6 +200,8 @@ public enum Icons {
 			return get( HUNTRESS );
 		case ELF:
 			return get( ELF );
+        case CLERIC:
+            return get( CLERIC );
 		default:
 			return null;
 		}

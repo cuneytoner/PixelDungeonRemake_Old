@@ -63,6 +63,11 @@ abstract public class Food extends Item {
 			GLog.i( message );
 			
 			switch (hero.heroClass) {
+			case CLERIC:
+				if (hero.hp() < hero.ht()) {
+					hero.hp(Math.min( hero.hp() + 15, hero.ht() ));
+					hero.getSprite().emitter().burst( Speck.factory( Speck.HEALING ), 1 );
+				}
 			case WARRIOR:
 				if (hero.hp() < hero.ht()) {
 					hero.hp(Math.min( hero.hp() + 5, hero.ht() ));

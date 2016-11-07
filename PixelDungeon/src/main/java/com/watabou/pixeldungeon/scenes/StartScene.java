@@ -170,7 +170,8 @@ public class StartScene extends PixelScene {
 		float centralHeight = buttonY - title.y - title.height();
 
 		HeroClass[] classes = { HeroClass.WARRIOR, HeroClass.MAGE,
-				HeroClass.ROGUE, HeroClass.HUNTRESS, HeroClass.ELF };
+				HeroClass.ROGUE, HeroClass.HUNTRESS, HeroClass.ELF,
+				HeroClass.CLERIC};
 		for (HeroClass cl : classes) {
 			ClassShield shield = new ClassShield(cl);
 			shields.put(cl, shield);
@@ -196,6 +197,11 @@ public class StartScene extends PixelScene {
 			for (int i = 0; i < classes.length; i++) {
 				ClassShield shield = shields.get(classes[i]);
 
+				if (i == 5 ) {
+					shield.setRect(left + shieldW , top - shieldH * 0.5f,
+							shieldW, shieldH);
+				}
+				else
 				if (i < 2) {
 					shield.setRect(left + i * shieldW * 2, top - shieldH * 0.5f, 
 							shieldW, shieldH);
@@ -205,7 +211,7 @@ public class StartScene extends PixelScene {
 			}
 
 			ChallengeButton challenge = new ChallengeButton();
-			challenge.setPos(w / 2 - challenge.width() / 2, top + shieldH*0.5f
+			challenge.setPos(w / 2 - challenge.width() / 2, top + shieldH*2.5f
 					- challenge.height() / 2);
 			add(challenge);
 		}

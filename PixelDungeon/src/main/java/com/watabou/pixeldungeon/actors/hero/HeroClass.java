@@ -28,6 +28,7 @@ import com.watabou.pixeldungeon.items.TomeOfMastery;
 import com.watabou.pixeldungeon.items.armor.ClassArmor;
 import com.watabou.pixeldungeon.items.armor.ClothArmor;
 import com.watabou.pixeldungeon.items.armor.ElfArmor;
+import com.watabou.pixeldungeon.items.armor.ClericArmor;
 import com.watabou.pixeldungeon.items.armor.HuntressArmor;
 import com.watabou.pixeldungeon.items.armor.MageArmor;
 import com.watabou.pixeldungeon.items.armor.RogueArmor;
@@ -59,7 +60,8 @@ public enum HeroClass {
 	MAGE(Game.getVar(R.string.HeroClass_Mag),MageArmor.class),
 	ROGUE(Game.getVar(R.string.HeroClass_Rog),RogueArmor.class),
 	HUNTRESS(Game.getVar(R.string.HeroClass_Hun),HuntressArmor.class),
-	ELF(Game.getVar(R.string.HeroClass_Elf),ElfArmor.class);
+	ELF(Game.getVar(R.string.HeroClass_Elf),ElfArmor.class),
+	CLERIC(Game.getVar(R.string.HeroClass_Cleric),ClericArmor.class);
 
 	private final Class<? extends ClassArmor> armorClass;
 
@@ -75,6 +77,8 @@ public enum HeroClass {
 			.getVars(R.array.HeroClass_HunPerks);
 	private static final String[] ELF_PERKS = Game
 			.getVars(R.array.HeroClass_ElfPerks);
+	private static final String[] CLERIC_PERKS = Game
+			.getVars(R.array.HeroClass_ClericPerks);
 
 	HeroClass(String title, Class<? extends ClassArmor> armorClass) {
 		this.title = title;
@@ -104,6 +108,10 @@ public enum HeroClass {
 
 			case ELF:
 				initElf(hero);
+				break;
+
+			case CLERIC:
+				initCleric(hero);
 				break;
 		}
 
@@ -170,6 +178,8 @@ public enum HeroClass {
 				return Badges.Badge.MASTERY_HUNTRESS;
 			case ELF:
 				return Badges.Badge.MASTERY_ELF;
+			case CLERIC:
+				return Badges.Badge.MASTERY_CLERIC;
 		}
 		return null;
 	}
@@ -235,6 +245,21 @@ public enum HeroClass {
 		QuickSlot.selectItem(CommonArrow.class, 0);
 	}
 
+	private void initCleric(Hero hero) {
+		hero.STR(hero.STR() - 1);
+
+		hero.ht(hero.ht() - 5);
+		hero.hp(hero.ht());
+
+		(hero.belongings.armor = new ClothArmor()).upgrade().identify();
+		(hero.belongings.weapon = new WoodenBow()).upgrade().identify();
+
+		hero.collect(new Dagger().upgrade().identify());
+		hero.collect(new CommonArrow(20));
+
+		QuickSlot.selectItem(CommonArrow.class, 0);
+	}
+
 	public String title() {
 		return title;
 	}
@@ -252,6 +277,8 @@ public enum HeroClass {
 				return HUN_PERKS;
 			case ELF:
 				return ELF_PERKS;
+			case CLERIC:
+				return CLERIC_PERKS;
 		}
 
 		return null;
@@ -262,6 +289,7 @@ public enum HeroClass {
 			case WARRIOR:
 			case MAGE:
 			case ROGUE:
+			case CLERIC:
 			case ELF:
 				return Utils.MASCULINE;
 			case HUNTRESS:
