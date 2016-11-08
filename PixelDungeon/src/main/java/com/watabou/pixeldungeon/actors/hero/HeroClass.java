@@ -24,6 +24,7 @@ import com.coner.pixeldungeon.remake.BuildConfig;
 import com.coner.pixeldungeon.remake.R;
 import com.watabou.noosa.Game;
 import com.watabou.pixeldungeon.Badges;
+import com.watabou.pixeldungeon.items.KindOfWeapon;
 import com.watabou.pixeldungeon.items.TomeOfMastery;
 import com.watabou.pixeldungeon.items.armor.ClassArmor;
 import com.watabou.pixeldungeon.items.armor.ClothArmor;
@@ -34,15 +35,19 @@ import com.watabou.pixeldungeon.items.armor.MageArmor;
 import com.watabou.pixeldungeon.items.armor.RogueArmor;
 import com.watabou.pixeldungeon.items.armor.WarriorArmor;
 import com.watabou.pixeldungeon.items.food.Ration;
+import com.watabou.pixeldungeon.items.potions.PotionOfHealing;
 import com.watabou.pixeldungeon.items.potions.PotionOfStrength;
 import com.watabou.pixeldungeon.items.rings.RingOfShadows;
 import com.watabou.pixeldungeon.items.scrolls.Scroll;
 import com.watabou.pixeldungeon.items.scrolls.ScrollOfIdentify;
 import com.watabou.pixeldungeon.items.scrolls.ScrollOfMagicMapping;
 import com.watabou.pixeldungeon.items.scrolls.ScrollOfSummon;
+import com.watabou.pixeldungeon.items.wands.WandOfDisintegration;
 import com.watabou.pixeldungeon.items.wands.WandOfMagicMissile;
+import com.watabou.pixeldungeon.items.wands.WandOfRegrowth;
 import com.watabou.pixeldungeon.items.weapon.melee.Dagger;
 import com.watabou.pixeldungeon.items.weapon.melee.Knuckles;
+import com.watabou.pixeldungeon.items.weapon.melee.Kusarigama;
 import com.watabou.pixeldungeon.items.weapon.melee.ShortSword;
 import com.watabou.pixeldungeon.items.weapon.melee.WoodenBow;
 import com.watabou.pixeldungeon.items.weapon.missiles.Boomerang;
@@ -148,7 +153,7 @@ public enum HeroClass {
 		//hero.hasPetAccessory = true;
 		Scroll scroll = new ScrollOfSummon();
 		hero.collect(scroll);
-
+/*
 		List<String> accessories = Accessory.getAccessoriesList();
 
 		//List
@@ -156,7 +161,7 @@ public enum HeroClass {
 			Accessory accessory = Accessory.getByName(item);
 			accessory.ownIt(true);
 		}
-
+*/
 	}
 
 	private static void initCommon(Hero hero) {
@@ -248,16 +253,17 @@ public enum HeroClass {
 	private void initCleric(Hero hero) {
 		hero.STR(hero.STR() - 1);
 
-		hero.ht(hero.ht() - 5);
+		hero.ht(hero.ht() + 10);
 		hero.hp(hero.ht());
 
 		(hero.belongings.armor = new ClothArmor()).upgrade().identify();
-		(hero.belongings.weapon = new WoodenBow()).upgrade().identify();
+        (hero.belongings.weapon = new WandOfDisintegration()).upgrade().upgrade().identify();
 
-		hero.collect(new Dagger().upgrade().identify());
-		hero.collect(new CommonArrow(20));
+        PotionOfHealing pot = new PotionOfHealing();
+        pot.setKnown();
+        hero.collect(pot);
 
-		QuickSlot.selectItem(CommonArrow.class, 0);
+		QuickSlot.selectItem(WandOfDisintegration.class, 0);
 	}
 
 	public String title() {

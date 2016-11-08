@@ -512,6 +512,13 @@ public class Hero extends Char {
 			}
 		}
 
+		if (hp() < 15){
+            if ( (buff(Invisibility.class)==null) && (this.invisible == 0)){
+
+              Buff.affect(this, Invisibility.class,10);
+              //r.attachTo(this);
+            }
+        }
 		for (Buff buff : buffs(RingOfHaste.Haste.class)) {
 			hasteLevel += ((RingOfHaste.Haste) buff).level;
 		}
