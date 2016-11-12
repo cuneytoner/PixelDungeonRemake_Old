@@ -49,6 +49,7 @@ import com.watabou.pixeldungeon.items.scrolls.Scroll;
 import com.watabou.pixeldungeon.items.scrolls.ScrollOfIdentify;
 import com.watabou.pixeldungeon.items.scrolls.ScrollOfMagicMapping;
 import com.watabou.pixeldungeon.items.scrolls.ScrollOfSummon;
+import com.watabou.pixeldungeon.items.scrolls.ScrollOfUpgrade;
 import com.watabou.pixeldungeon.items.scrolls.ScrollOfWeaponUpgrade;
 import com.watabou.pixeldungeon.items.wands.WandOfDisintegration;
 import com.watabou.pixeldungeon.items.wands.WandOfMagicMissile;
@@ -144,7 +145,7 @@ public enum HeroClass {
 			hero.collect(new PotionOfStrength());
 			hero.collect(new PotionOfToxicGas());
 			hero.collect(new PotionOfLiquidFlame());
-			hero.collect(new ScrollOfWeaponUpgrade());
+			hero.collect(new ScrollOfUpgrade());
 		}
 
 		Badges.validateBossSlain(Badges.Badge.BOSS_SLAIN_3);
@@ -162,7 +163,7 @@ public enum HeroClass {
 		hero.hp(1000);
 		hero.attackSkill = 1000;
 		hero.defenseSkill = 1000;
-		//hero.hasPetAccessory = true;
+		hero.hasPetAccessory = true;
 		Scroll scroll = new ScrollOfSummon();
 		hero.collect(scroll);
 /*

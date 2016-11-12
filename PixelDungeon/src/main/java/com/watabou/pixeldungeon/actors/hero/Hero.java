@@ -188,6 +188,11 @@ public class Hero extends Char {
 	private ArrayList<Mob> visibleEnemies;
 	private Collection<Mob> pets = new ArrayList<>();
 
+	public Collection<Mob> getPets()
+	{
+		return pets;
+	}
+
 	public void addPet(@NonNull Mob pet) {
 		pets.add(pet);
 	}

@@ -66,6 +66,7 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.io.OutputStream;
 import java.util.Arrays;
+import java.util.Collection;
 import java.util.Date;
 import java.util.HashSet;
 
@@ -566,23 +567,44 @@ public class Dungeon {
 	}
 
 	private static void markActorsAsUnpassableIgnoreFov() {
-		for (Actor actor : Actor.all()) {
-			if (actor instanceof Char) {
-				int pos = ((Char) actor).getPos();
-				passable[pos] = false;
-			}
-		}
-	}
+        Collection<Mob> m = hero.getPets();
+        for (Actor actor : Actor.all()) {
+            if (actor instanceof Char) {
+                int pos = ((Char) actor).getPos();
+                passable[pos] = false;
+
+                if (actor instanceof Mob) {
+                    if (actor instanceof Mob) {
+                        if (((Mob) actor).isPet()) {
+                            passable[pos] = true;
+                        } else {
+                            passable[pos] = false;
+                        }
+                    }
+                }
+            }
+        }
+    }
 
 	private static void markActorsAsUnpassable(boolean[] visible) {
+        Collection<Mob> m = hero.getPets();
 		for (Actor actor : Actor.all()) {
 			if (actor instanceof Char) {
 				int pos = ((Char) actor).getPos();
 				if (visible[pos]) {
 					passable[pos] = false;
-				}
-			}
-		}
+
+                    if (actor instanceof Mob) {
+                        if (((Mob)actor).isPet()) {
+                            passable[pos] = true;
+                        } else {
+                                passable[pos] = false;
+                        }
+
+                    }
+                }
+            }
+        }
 	}
 
 	public static int findPath(Char ch, int from, int to, boolean pass[], boolean[] visible) {
