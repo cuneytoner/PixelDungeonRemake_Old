@@ -33,22 +33,6 @@ public class PaladinArmor extends ClassArmor {
 
     @Override
     public void doSpecial() {
-
-        for (Mob mob : Dungeon.level.mobs) {
-            if (Dungeon.level.fieldOfView[mob.getPos()]) {
-                GameScene.add( Blob.seed( mob.getPos(), 100, Regrowth.class ) );
-            }
-        }
-
-        getCurUser().hp(getCurUser().hp() - (getCurUser().hp() / 3));
-
-        getCurUser().spend( Actor.TICK );
-        getCurUser().getSprite().operate( getCurUser().getPos() );
-        getCurUser().busy();
-
-        Sample.INSTANCE.play( Assets.SND_READ );
-
-        GameScene.add( Blob.seed( getCurUser().getPos(), 100, Regrowth.class ) );
     }
 
     @Override

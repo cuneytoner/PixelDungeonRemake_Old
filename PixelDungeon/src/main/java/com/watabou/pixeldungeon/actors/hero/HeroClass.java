@@ -141,6 +141,7 @@ public enum HeroClass {
 
 		for(int i = 0;i<100;i++) {
 			hero.collect(new ScrollOfMagicMapping());
+			hero.collect(new PotionOfStrength());
 			hero.collect(new PotionOfToxicGas());
 			hero.collect(new PotionOfLiquidFlame());
 			hero.collect(new ScrollOfWeaponUpgrade());
