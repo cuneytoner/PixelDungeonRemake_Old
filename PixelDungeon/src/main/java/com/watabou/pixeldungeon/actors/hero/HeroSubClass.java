@@ -20,12 +20,14 @@ package com.watabou.pixeldungeon.actors.hero;
 import com.coner.android.util.TrackedRuntimeException;
 import com.coner.pixeldungeon.remake.R;
 import com.watabou.noosa.Game;
+import com.watabou.pixeldungeon.items.armor.ArcPriestArmor;
 import com.watabou.pixeldungeon.items.armor.AssasinArmor;
 import com.watabou.pixeldungeon.items.armor.BattleMageArmor;
 import com.watabou.pixeldungeon.items.armor.BerserkArmor;
 import com.watabou.pixeldungeon.items.armor.ClassArmor;
 import com.watabou.pixeldungeon.items.armor.FreeRunnerArmor;
 import com.watabou.pixeldungeon.items.armor.GladiatorArmor;
+import com.watabou.pixeldungeon.items.armor.PaladinArmor;
 import com.watabou.pixeldungeon.items.armor.ScoutArmor;
 import com.watabou.pixeldungeon.items.armor.ShamanArmor;
 import com.watabou.pixeldungeon.items.armor.SniperArmor;
@@ -46,8 +48,8 @@ public enum HeroSubClass {
 	WARDEN(    Game.getVar(R.string.HeroSubClass_NameWard),   Game.getVar(R.string.HeroSubClass_DescWard), WardenArmor.class),
 	SCOUT(     Game.getVar(R.string.HeroSubClass_NameScout),  Game.getVar(R.string.HeroSubClass_DescScout), ScoutArmor.class),
 	SHAMAN(    Game.getVar(R.string.HeroSubClass_NameShaman), Game.getVar(R.string.HeroSubClass_DescShaman), ShamanArmor.class),
-	PALADIN(     Game.getVar(R.string.HeroSubClass_NamePaladin),  Game.getVar(R.string.HeroSubClass_DescScout), ScoutArmor.class),
-	ARCPRIEST(    Game.getVar(R.string.HeroSubClass_NameArcPriest), Game.getVar(R.string.HeroSubClass_DescShaman), ShamanArmor.class);
+	PALADIN(     Game.getVar(R.string.HeroSubClass_NamePaladin),  Game.getVar(R.string.HeroSubClass_DescPaladin), PaladinArmor.class),
+	ARCPRIEST(    Game.getVar(R.string.HeroSubClass_NameArcPriest ), Game.getVar(R.string.HeroSubClass_DescArcPriest), ArcPriestArmor.class);
 
 	private String title;
 	private String desc;

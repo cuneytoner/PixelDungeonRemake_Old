@@ -20,28 +20,36 @@ package com.watabou.pixeldungeon.actors.hero;
 
 import com.coner.android.util.TrackedRuntimeException;
 import com.coner.pixeldungeon.items.accessories.Accessory;
+import com.coner.pixeldungeon.items.guts.weapon.melee.Claymore;
+import com.coner.pixeldungeon.items.necropolis.BlackSkull;
+import com.coner.pixeldungeon.items.necropolis.BladeOfSouls;
 import com.coner.pixeldungeon.remake.BuildConfig;
 import com.coner.pixeldungeon.remake.R;
 import com.watabou.noosa.Game;
 import com.watabou.pixeldungeon.Badges;
 import com.watabou.pixeldungeon.items.KindOfWeapon;
 import com.watabou.pixeldungeon.items.TomeOfMastery;
+import com.watabou.pixeldungeon.items.armor.ArcPriestArmor;
 import com.watabou.pixeldungeon.items.armor.ClassArmor;
 import com.watabou.pixeldungeon.items.armor.ClothArmor;
 import com.watabou.pixeldungeon.items.armor.ElfArmor;
 import com.watabou.pixeldungeon.items.armor.ClericArmor;
 import com.watabou.pixeldungeon.items.armor.HuntressArmor;
 import com.watabou.pixeldungeon.items.armor.MageArmor;
+import com.watabou.pixeldungeon.items.armor.PaladinArmor;
 import com.watabou.pixeldungeon.items.armor.RogueArmor;
 import com.watabou.pixeldungeon.items.armor.WarriorArmor;
 import com.watabou.pixeldungeon.items.food.Ration;
 import com.watabou.pixeldungeon.items.potions.PotionOfHealing;
+import com.watabou.pixeldungeon.items.potions.PotionOfLiquidFlame;
 import com.watabou.pixeldungeon.items.potions.PotionOfStrength;
+import com.watabou.pixeldungeon.items.potions.PotionOfToxicGas;
 import com.watabou.pixeldungeon.items.rings.RingOfShadows;
 import com.watabou.pixeldungeon.items.scrolls.Scroll;
 import com.watabou.pixeldungeon.items.scrolls.ScrollOfIdentify;
 import com.watabou.pixeldungeon.items.scrolls.ScrollOfMagicMapping;
 import com.watabou.pixeldungeon.items.scrolls.ScrollOfSummon;
+import com.watabou.pixeldungeon.items.scrolls.ScrollOfWeaponUpgrade;
 import com.watabou.pixeldungeon.items.wands.WandOfDisintegration;
 import com.watabou.pixeldungeon.items.wands.WandOfMagicMissile;
 import com.watabou.pixeldungeon.items.wands.WandOfRegrowth;
@@ -130,7 +138,7 @@ public enum HeroClass {
 	}
 
 	private static void initDebug(Hero hero) {
-        /*
+
 		for(int i = 0;i<100;i++) {
 			hero.collect(new ScrollOfMagicMapping());
 			hero.collect(new PotionOfToxicGas());
@@ -143,13 +151,16 @@ public enum HeroClass {
 		hero.collect(new TomeOfMastery());
 		hero.collect(new Claymore().identify().upgrade(100));
 
+		hero.collect(new ArcPriestArmor());
+		hero.collect(new PaladinArmor());
+
 		hero.collect(new BlackSkull());
 		hero.collect(new BladeOfSouls().identify());
 
 		hero.ht(1000);
 		hero.hp(1000);
 		hero.attackSkill = 1000;
-		hero.defenseSkill = 1000;*/
+		hero.defenseSkill = 1000;
 		//hero.hasPetAccessory = true;
 		Scroll scroll = new ScrollOfSummon();
 		hero.collect(scroll);

@@ -23,7 +23,7 @@ public class PaladinArmor extends ClassArmor {
     public PaladinArmor()
     {
         name = Game.getVar(R.string.ClericArmor_Name);
-        image = 18;
+        image = 22;
     }
 
     @Override
@@ -63,6 +63,6 @@ public class PaladinArmor extends ClassArmor {
 
     @Override
     public String desc() {
-        return Game.getVar(R.string.ElfArmor_Desc);
+        return Game.getVar(R.string.ClericArmor_Desc);
     }
 }

@@ -101,8 +101,8 @@
     <string name="HeroSubClass_NameShaman">shaman</string>
     <string name="HeroSubClass_DescShaman">Elven _Shamans_ can use wands as melee weapons. Successful hits have a chance to activate the wand\'s power on a target without using a charge.</string>
     <string name="HeroSubClass_NamePaladin">Paladin</string>
-    <string name="HeroSubClass_DescPaladin">Elven _Scouts_ are masters of stealth. Trampling high grass grants them a temporary invisibility buff. Also they are even faster than regular Elves.</string>
-    <string name="HeroSubClass_NameArcPriest">shaman</string>
-    <string name="HeroSubClass_DescArcPriest">Elven _Shamans_ can use wands as melee weapons. Successful hits have a chance to activate the wand\'s power on a target without using a charge.</string>
+    <string name="HeroSubClass_DescPaladin">Cleric _Paladins_ are masters of god given magics. They cast randomly buffs on their attacks.</string>
+    <string name="HeroSubClass_NameArcPriest">Arc Priest</string>
+    <string name="HeroSubClass_DescArcPriest">Cleric _ArcPriests_ are master of buffs and health. They regenerates their own hp\'s and they can invisible in emergency.</string>
 
 </resources>

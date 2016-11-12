@@ -23,7 +23,7 @@ public class ArcPriestArmor extends ClassArmor {
     public ArcPriestArmor()
     {
         name = Game.getVar(R.string.ClericArmor_Name);
-        image = 19;
+        image = 23;
         hasHelmet = true;
         coverHair = true;
     }
@@ -65,6 +65,6 @@ public class ArcPriestArmor extends ClassArmor {
 
     @Override
     public String desc() {
-        return Game.getVar(R.string.ElfArmor_Desc);
+        return Game.getVar(R.string.ClericArmor_Desc);
     }
 }

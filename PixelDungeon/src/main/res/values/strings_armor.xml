@@ -28,7 +28,7 @@
 
     <!-- STRINGS OF ClericArmor CLASS -->
     <string name="ClericArmor_Name">Cleric Cloak</string>
-    <string name="ClericArmor_Desc">With the help of this mantle, the Cleric can summon the forces of the Gods.Cleric can use this power to regenrate health</string>
+    <string name="ClericArmor_Desc">With the help of this cloak, the Cleric can summon the forces of the Gods.Cleric can use this power to regenerate health</string>
     <string name="ClericArmor_ACSpecial">HEALTH FLOWS</string>
     <string name="ClericArmor_NotCleric">Only clerics can use this armor!</string>
 
