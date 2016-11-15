@@ -274,6 +274,7 @@ public abstract class Level implements Bundlable {
 		initSizeDependentStuff();
 
 		if (!isBossLevel()) {
+			addItemToSpawn(Generator.random(Generator.Category.DRINK));
 			addItemToSpawn(Generator.random(Generator.Category.FOOD));
 			if (Dungeon.posNeeded()) {
 				addItemToSpawn(new PotionOfStrength());

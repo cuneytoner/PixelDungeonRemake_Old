@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<instant-run
+    abi="armeabi-v7a,armeabi"
+    api-level="22"
+    density="xhdpi"
+    format="8"
+    plugin-version="2.2.2"
+    timestamp="10764046435797"
+    token="3141927945709981458"
+    verifier="COLD_SWAP_REQUESTED" >
+
+    <task
+        name="javac"
+        duration="9536" />
+    <task
+        name="instant-run-dex"
+        duration="0" />
+    <task
+        name="instant-run-transform"
+        duration="390" />
+    <task
+        name="verifier"
+        duration="13" />
+
+    <artifact
+        location="/media/cc/cc/Projects/PixelDungeonRemake/PixelDungeon/build/intermediates/instant-run-resources/resources-GooglePlay/debug.ir.ap_"
+        type="RESOURCES" />
+    <artifact
+        location="/media/cc/cc/Projects/PixelDungeonRemake/PixelDungeon/build/intermediates/transforms/dex/GooglePlay/debug/folders/1000/5/slice_1/classes.dex"
+        type="DEX" />
+    <artifact
+        location="/media/cc/cc/Projects/PixelDungeonRemake/PixelDungeon/build/intermediates/transforms/dex/GooglePlay/debug/folders/1000/5/slice_4/classes.dex"
+        type="DEX" />
+    <artifact
+        location="/media/cc/cc/Projects/PixelDungeonRemake/PixelDungeon/build/intermediates/transforms/dex/GooglePlay/debug/folders/1000/5/slice_0/classes.dex"
+        type="DEX" />
+    <artifact
+        location="/media/cc/cc/Projects/PixelDungeonRemake/PixelDungeon/build/intermediates/transforms/dex/GooglePlay/debug/folders/1000/5/slice_5/classes.dex"
+        type="DEX" />
+    <artifact
+        location="/media/cc/cc/Projects/PixelDungeonRemake/PixelDungeon/build/intermediates/transforms/dex/GooglePlay/debug/folders/1000/5/slice_9/classes.dex"
+        type="DEX" />
+    <artifact
+        location="/media/cc/cc/Projects/PixelDungeonRemake/PixelDungeon/build/intermediates/transforms/dex/GooglePlay/debug/folders/1000/5/slice_3/classes.dex"
+        type="DEX" />
+
+    <build
+        timestamp="7392565879277"
+        verifier="FULL_BUILD_REQUESTED" >
+        <artifact
+            location="/media/cc/cc/Projects/PixelDungeonRemake/PixelDungeon/build/outputs/apk/PixelDungeon-GooglePlay-debug.apk"
+            type="MAIN" />
+    </build>
+    <build
+        timestamp="10764046435797"
+        verifier="COLD_SWAP_REQUESTED" >
+        <artifact
+            location="/media/cc/cc/Projects/PixelDungeonRemake/PixelDungeon/build/intermediates/instant-run-resources/resources-GooglePlay/debug.ir.ap_"
+            type="RESOURCES" />
+        <artifact
+            location="/media/cc/cc/Projects/PixelDungeonRemake/PixelDungeon/build/intermediates/transforms/dex/GooglePlay/debug/folders/1000/5/slice_1/classes.dex"
+            type="DEX" />
+        <artifact
+            location="/media/cc/cc/Projects/PixelDungeonRemake/PixelDungeon/build/intermediates/transforms/dex/GooglePlay/debug/folders/1000/5/slice_4/classes.dex"
+            type="DEX" />
+        <artifact
+            location="/media/cc/cc/Projects/PixelDungeonRemake/PixelDungeon/build/intermediates/transforms/dex/GooglePlay/debug/folders/1000/5/slice_0/classes.dex"
+            type="DEX" />
+        <artifact
+            location="/media/cc/cc/Projects/PixelDungeonRemake/PixelDungeon/build/intermediates/transforms/dex/GooglePlay/debug/folders/1000/5/slice_5/classes.dex"
+            type="DEX" />
+        <artifact
+            location="/media/cc/cc/Projects/PixelDungeonRemake/PixelDungeon/build/intermediates/transforms/dex/GooglePlay/debug/folders/1000/5/slice_9/classes.dex"
+            type="DEX" />
+        <artifact
+            location="/media/cc/cc/Projects/PixelDungeonRemake/PixelDungeon/build/intermediates/transforms/dex/GooglePlay/debug/folders/1000/5/slice_3/classes.dex"
+            type="DEX" />
+    </build>
+    <build
+        timestamp="80671911492465"
+        verifier="COLD_SWAP_REQUESTED" >
+        <artifact
+            location="/media/cc/cc/Projects/PixelDungeonRemake/PixelDungeon/build/intermediates/transforms/dex/GooglePlay/debug/folders/1000/5/slice_8/classes.dex"
+            type="DEX" />
+    </build>
+
+</instant-run>

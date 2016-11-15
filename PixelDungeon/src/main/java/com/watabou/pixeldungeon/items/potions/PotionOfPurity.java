@@ -30,6 +30,7 @@ import com.watabou.pixeldungeon.actors.buffs.GasesImmunity;
 import com.watabou.pixeldungeon.actors.hero.Hero;
 import com.watabou.pixeldungeon.effects.CellEmitter;
 import com.watabou.pixeldungeon.effects.Speck;
+import com.watabou.pixeldungeon.items.drink.TaintedDrink;
 import com.watabou.pixeldungeon.items.food.RottenFood;
 import com.watabou.pixeldungeon.utils.BArray;
 import com.watabou.pixeldungeon.utils.GLog;
@@ -119,14 +120,24 @@ public class PotionOfPurity extends Potion {
 	public int price() {
 		return isKnown() ? 50 * quantity() : super.price();
 	}
-	
+
 	@Override
 	protected void moistenRottenFood(RottenFood rfood) {
-		
+
 		detachMoistenItems(rfood,1);
 		moistenEffective();
 		GLog.i(TXT_ROTTEN_FOOD_MOISTEN, rfood.name());
-		
+
 		getCurUser().collect(rfood.purify());
+	}
+	@Override
+
+	protected void moistenTaintedDrink(TaintedDrink rdrink) {
+
+		detachMoistenItems(rdrink,1);
+		moistenEffective();
+		GLog.i(TXT_ROTTEN_FOOD_MOISTEN, rdrink.name());
+
+		getCurUser().collect(rdrink.purify());
 	}
 }

@@ -71,6 +71,11 @@ public class PixelDungeon extends Game {
 		com.watabou.utils.Bundle.addAlias(
 				com.coner.pixeldungeon.items.accessories.Nightcap.class,
 				"com.coner.pixeldungeon.items.accessories.SleepyHat");
+		// Remake 1.17
+		com.watabou.utils.Bundle.addAlias(
+				com.watabou.pixeldungeon.items.drink.Beer.class,
+				"com.watabou.pixeldungeon.items.drink.Drink");
+
 	}
 
 	@Override

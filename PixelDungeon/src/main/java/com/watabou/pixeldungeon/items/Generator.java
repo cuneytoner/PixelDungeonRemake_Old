@@ -36,6 +36,8 @@ import com.watabou.pixeldungeon.items.armor.MailArmor;
 import com.watabou.pixeldungeon.items.armor.PlateArmor;
 import com.watabou.pixeldungeon.items.armor.ScaleArmor;
 import com.watabou.pixeldungeon.items.bags.Bag;
+import com.watabou.pixeldungeon.items.drink.Beer;
+import com.watabou.pixeldungeon.items.drink.Drink;
 import com.watabou.pixeldungeon.items.food.Food;
 import com.watabou.pixeldungeon.items.food.MysteryMeat;
 import com.watabou.pixeldungeon.items.food.Pasty;
@@ -151,7 +153,8 @@ public class Generator {
 		FOOD	( 0,	Food.class ),
 		GOLD	( 50,	Gold.class ),
 		RANGED  ( 2,	Bow.class),
-		BULLETS ( 5,	Arrow.class);
+		BULLETS ( 5,	Arrow.class),
+        DRINK   ( 0,    Drink.class);
 
 		public Class<?>[] classes;
 		public float[] probs;
@@ -275,6 +278,11 @@ public class Generator {
 				Pasty.class,
 				MysteryMeat.class };
 		Category.FOOD.probs = new float[]{ 12, 4, 2 };
+
+        Category.DRINK.classes = new Class<?>[]{
+                Beer.class
+        };
+        Category.DRINK.probs = new float[]{14};
 
 		Category.RING.classes = new Class<?>[]{
 				RingOfMending.class,

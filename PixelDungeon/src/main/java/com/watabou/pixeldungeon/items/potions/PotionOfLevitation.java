@@ -22,6 +22,7 @@ import com.watabou.noosa.Game;
 import com.watabou.pixeldungeon.actors.buffs.Buff;
 import com.watabou.pixeldungeon.actors.buffs.Levitation;
 import com.watabou.pixeldungeon.actors.hero.Hero;
+import com.watabou.pixeldungeon.items.drink.TaintedDrink;
 import com.watabou.pixeldungeon.items.food.RottenFood;
 import com.watabou.pixeldungeon.items.scrolls.Scroll;
 import com.watabou.pixeldungeon.items.weapon.missiles.Arrow;
@@ -59,12 +60,20 @@ public class PotionOfLevitation extends Potion {
 		GLog.i(TXT_ITEM_FLIES_AWAY , scroll.name());
 		moistenEffective();
 	}
-	
+
 	@Override
 	protected void moistenRottenFood(RottenFood rfood) {
 		detachMoistenItems(rfood,1);
-		
+
 		GLog.i(TXT_ITEM_FLIES_AWAY , rfood.name());
+		moistenEffective();
+	}
+
+	@Override
+	protected void moistenTaintedDrink(TaintedDrink rdrink) {
+		detachMoistenItems(rdrink,1);
+
+		GLog.i(TXT_ITEM_FLIES_AWAY , rdrink.name());
 		moistenEffective();
 	}
 }

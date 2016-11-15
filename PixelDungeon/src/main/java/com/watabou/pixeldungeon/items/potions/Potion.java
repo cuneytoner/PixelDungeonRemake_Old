@@ -27,6 +27,8 @@ import com.watabou.pixeldungeon.actors.hero.Hero;
 import com.watabou.pixeldungeon.effects.Splash;
 import com.watabou.pixeldungeon.items.Item;
 import com.watabou.pixeldungeon.items.ItemStatusHandler;
+import com.watabou.pixeldungeon.items.drink.TaintedBeer;
+import com.watabou.pixeldungeon.items.drink.TaintedDrink;
 import com.watabou.pixeldungeon.items.food.RottenFood;
 import com.watabou.pixeldungeon.items.scrolls.Scroll;
 import com.watabou.pixeldungeon.items.weapon.missiles.Arrow;
@@ -62,6 +64,7 @@ public class Potion extends Item {
 	protected static final String TXT_ARROW_MOISTEN       = Game.getVar(R.string.Potion_ArrowMoisten);
 	protected static final String TXT_ITEM_FLIES_AWAY     = Game.getVar(R.string.Potion_ItemFliesAway);
 	protected static final String TXT_ROTTEN_FOOD_MOISTEN = Game.getVar(R.string.Potion_FoodRefreshed);
+	protected static final String TXT_TAINTED_DRINK_MOISTEN = Game.getVar(R.string.Potion_DrinkRefreshed);
 	
 	
 	private static final float TIME_TO_DRINK = 1f;
@@ -346,9 +349,13 @@ public class Potion extends Item {
 				if(item instanceof Scroll) {
 					moistenScroll ((Scroll) item );
 				}
-				
+
 				if(item instanceof RottenFood) {
 					moistenRottenFood((RottenFood) item);
+				}
+
+				if(item instanceof TaintedDrink) {
+					moistenTaintedDrink((TaintedDrink) item);
 				}
 			}
 		}
@@ -382,7 +389,11 @@ public class Potion extends Item {
 	protected void moistenRottenFood(RottenFood scroll) {
 		moistenUseless();
 	}
-	
+
+	protected void moistenTaintedDrink(TaintedDrink scroll) {
+		moistenUseless();
+	}
+
 	protected void moistenScroll(Scroll scroll) {
 		moistenUseless();
 	}

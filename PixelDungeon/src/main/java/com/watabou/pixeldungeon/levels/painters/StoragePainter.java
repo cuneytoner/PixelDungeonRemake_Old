@@ -58,7 +58,8 @@ public class StoragePainter extends Painter {
 			Generator.Category.POTION, 
 			Generator.Category.SCROLL,
 			Generator.Category.FOOD, 
-			Generator.Category.GOLD
+			Generator.Category.GOLD,
+		    Generator.Category.DRINK
 		) );
 	}
 }
