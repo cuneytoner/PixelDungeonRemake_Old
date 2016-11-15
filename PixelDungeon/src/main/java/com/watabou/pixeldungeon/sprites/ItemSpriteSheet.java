@@ -161,12 +161,17 @@ public class ItemSpriteSheet {
 	public static final int STEAK		= 114;
 	public static final int OVERPRICED	= 115;
 	public static final int CARPACCIO	= 116;
+	public static final int BEER     	= 148;
+	public static final int FROZEN_BEER = 150;
+	public static final int BOILED_BEER = 151;
+
 	
 	// Rotten food
 	public static final int ROTTEN_PASTY    = 117;
 	public static final int ROTTEN_MEAT	    = 118;
 	public static final int ROTTEN_RATION   = 119;
-	
+	public static final int TAINTED_BEER    = 149;
+
 	// Bags
 	public static final int POUCH	= 83;
 	public static final int HOLDER	= 104;

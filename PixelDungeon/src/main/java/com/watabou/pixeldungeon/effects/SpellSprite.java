@@ -11,7 +11,7 @@
  * but WITHOUT ANY WARRANTY; without even the implied warranty of
  * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
  * GNU General Public License for more details.
- *
+ *nD
  * You should have received a copy of the GNU General Public License
  * along with this program.  If not, see <http://www.gnu.org/licenses/>
  */
@@ -31,7 +31,8 @@ public class SpellSprite extends Image {
 	public static final int MAP			= 1;
 	public static final int CHARGE		= 2;
 	public static final int MASTERY		= 3;
-	
+	public static final int DRINK		= 4;
+
 	private static final int SIZE	= 16;
 	
 	private enum Phase {

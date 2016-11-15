@@ -489,7 +489,7 @@ public abstract class Mob extends Char {
 		}
 		alerted = true;
 
-		super.damage(dmg, src);
+        super.damage(dmg, src);
 	}
 
 	@Override

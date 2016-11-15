@@ -60,7 +60,9 @@ public class WndHats extends Window {
 			@Override
 			protected void onClick() {
 				super.onClick();
-				GameScene.show( new WndMessage( Accessory.getByName(Accessory.equipped().name()).getInfo() ) );
+				if (Accessory.equipped() != null) {
+					GameScene.show(new WndMessage(Accessory.getByName(Accessory.equipped().name()).getInfo()));
+				}
 			}
 		};
 

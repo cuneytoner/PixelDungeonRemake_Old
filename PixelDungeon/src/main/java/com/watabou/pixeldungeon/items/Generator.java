@@ -202,7 +202,7 @@ public class Generator {
 				ScrollOfSummon.class,
 		};
 
-		Category.SCROLL.probs = new float[]{ 30, 10, 15, 0, 10, 15, 12, 8, 8, 0, 4, 6, 10, 8, 6, 3};
+		Category.SCROLL.probs = new float[]{ 30, 10, 15, 0, 10, 15, 12, 8, 8, 0, 4, 6, 10, 8, 6, 5};
 
 		Category.POTION.classes = new Class<?>[]{
 				PotionOfHealing.class,
@@ -274,7 +274,7 @@ public class Generator {
 				Ration.class,
 				Pasty.class,
 				MysteryMeat.class };
-		Category.FOOD.probs = new float[]{ 4, 1, 0 };
+		Category.FOOD.probs = new float[]{ 12, 4, 2 };
 
 		Category.RING.classes = new Class<?>[]{
 				RingOfMending.class,

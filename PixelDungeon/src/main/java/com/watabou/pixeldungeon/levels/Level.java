@@ -132,7 +132,7 @@ public abstract class Level implements Bundlable {
 	public static int[] NEIGHBOURS8;
 	public static int[] NEIGHBOURS9;
 
-	protected static final float TIME_TO_RESPAWN = 50;
+	protected static final float TIME_TO_RESPAWN = 30;
 
 	private static final String TXT_HIDDEN_PLATE_CLICKS = Game
 			.getVar(R.string.Level_HiddenPlate);
@@ -292,7 +292,7 @@ public abstract class Level implements Bundlable {
 				addItemToSpawn(Generator.random(Generator.Category.RANGED));
 			}
 
-			if (Random.Int(15) == 0) {
+			if (Random.Int(10) == 0) {
 				addItemToSpawn(new PseudoPasty());
 			}
 

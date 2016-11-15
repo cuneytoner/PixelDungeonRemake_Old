@@ -546,7 +546,7 @@ public abstract class RegularLevel extends CommonLevel {
 	
 	@Override
 	public int nMobs() {
-		return 3 + Dungeon.depth % 5 + Random.Int( 4 );
+		return (3 + Dungeon.depth % 5 + Random.Int( 4 )) * ( (int)(this.getWidth() / 20));
 	}
 	
 	@Override

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- PACKAGE /items/food -->
+    <!-- STRINGS OF Drink CLASS -->
+    <string name="Drink_ACDrink">Drink</string>
+    <string name="Drink_Message">That food tasted delicious!</string>
+
+    <!-- STRINGS OF ChargrilledMeat CLASS -->
+    <string name="BoiledBeer_Name">chargrilled meat</string>
+    <string name="BoiledBeer_Info">It looks like a decent steak.</string>
+
+    <!-- STRINGS OF FrozenBeer CLASS -->
+    <string name="FrozenBeer_Name">frozen carpaccio</string>
+    <string name="FrozenBeer_Info">It\'s a piece of frozen raw meat. The only way to eat it is by cutting thin slices of it. And this way it\'s surprisingly good.</string>
+    <string name="FrozenBeer_Info1">You see your hands turn invisible!</string>
+    <string name="FrozenBeer_Info2">You feel your skin harden!</string>
+    <string name="FrozenBeer_Info3">Refreshing!</string>
+    <string name="FrozenBeer_Info4">You feel better!</string>
+
+
+    <!-- STRINGS OF Beer CLASS -->
+    <string name="Beer_Name">beer</string>
+    <string name="Beer_Info">It\'s looks very tasty!</string>
+    <string name="Beer_Info1">Oh it\'s hot!</string>
+    <string name="Beer_Info2">You can\'t feel your legs!</string>
+    <string name="Beer_Info3">You are not feeling well.</string>
+    <string name="Beer_Info4">You are stuffed.</string>
+    <string name="Beer_Message">That food tasted... strange.</string>
+
+    <!-- STRINGS OF RottenFood CLASS -->
+    <string name="TaintedDrink_Message">Disgusting!</string>
+
+    <!-- STRINGS OF RottenMeat CLASS -->
+    <string name="TaintedBeer_Name">Rotten meat</string>
+    <string name="TaintedBeer_Info">A piece of rotten meat</string>
+
+
+</resources>

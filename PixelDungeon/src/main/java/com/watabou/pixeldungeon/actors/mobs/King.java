@@ -110,6 +110,10 @@ public class King extends Boss {
 	}
 	
 	private boolean canTryToSummon() {
+		if (this.isPet()){
+			return false;
+		}
+
 		if (Undead.count < maxArmySize()) {
 			Char ch = Actor.findChar( ((CityBossLevel)(Dungeon.level)).pedestal( nextPedestal ) );
 			return ch == this || ch == null;
@@ -124,7 +128,10 @@ public class King extends Boss {
 			summon();
 			return true;
 		} else {
-			if (Actor.findChar( ((CityBossLevel)(Dungeon.level)).pedestal( nextPedestal ) ) == enemy) {
+            if (isPet())
+            {
+            }
+            else if (Actor.findChar( ((CityBossLevel)(Dungeon.level)).pedestal( nextPedestal ) ) == enemy) {
 				nextPedestal = !nextPedestal;
 			}
 			return super.attack(enemy);

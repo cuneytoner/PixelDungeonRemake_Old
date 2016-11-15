@@ -58,5 +58,4 @@ public class Effects {
 			break;
 		}
 		return icon;
-	}
-}
+	}}

@@ -30,6 +30,7 @@
     <string name="MysteryMeat_Info4">You are stuffed.</string>
     <string name="MysteryMeat_Message">That food tasted... strange.</string>
 
+
     <!-- STRINGS OF RottenFood CLASS -->
     <string name="RottenFood_Message">Disgusting!</string>
 

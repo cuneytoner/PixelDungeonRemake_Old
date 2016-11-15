@@ -168,7 +168,7 @@ public class ShadowLord extends Boss {
 	@Override
 	public void damage(int dmg, Object src) {
 		super.damage(dmg, src);
-		if (src != this) {
+		if ( (src != this) && (this.isPet()==false ) ) {
 			if (dmg > 0 && cooldown < 0) {
 				state = FLEEING;
 				if (src instanceof Char) {

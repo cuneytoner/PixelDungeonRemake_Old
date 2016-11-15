@@ -48,6 +48,12 @@ android {
             targetSdkVersion 23
             applicationId 'com.coner.pixeldungeon.remake'
         }
+        Amazon {
+            minSdkVersion 14
+            applicationId 'com.coner.pixeldungeon.remake'
+            signingConfig signingConfigs.release
+            targetSdkVersion 23
+        }
     }
 }
 

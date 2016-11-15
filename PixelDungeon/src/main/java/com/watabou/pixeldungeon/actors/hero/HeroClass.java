@@ -39,6 +39,10 @@ import com.watabou.pixeldungeon.items.armor.MageArmor;
 import com.watabou.pixeldungeon.items.armor.PaladinArmor;
 import com.watabou.pixeldungeon.items.armor.RogueArmor;
 import com.watabou.pixeldungeon.items.armor.WarriorArmor;
+import com.watabou.pixeldungeon.items.drink.Beer;
+import com.watabou.pixeldungeon.items.drink.BoiledBeer;
+import com.watabou.pixeldungeon.items.drink.FrozenBeer;
+import com.watabou.pixeldungeon.items.drink.TaintedBeer;
 import com.watabou.pixeldungeon.items.food.Ration;
 import com.watabou.pixeldungeon.items.potions.PotionOfHealing;
 import com.watabou.pixeldungeon.items.potions.PotionOfLiquidFlame;
@@ -152,6 +156,11 @@ public enum HeroClass {
 
 		hero.collect(new TomeOfMastery());
 		hero.collect(new Claymore().identify().upgrade(100));
+
+		hero.collect(new Beer());
+		hero.collect(new FrozenBeer());
+		hero.collect(new BoiledBeer());
+		hero.collect(new TaintedBeer());
 
 		hero.collect(new ArcPriestArmor());
 		hero.collect(new PaladinArmor());

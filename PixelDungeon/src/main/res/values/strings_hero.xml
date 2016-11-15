@@ -72,10 +72,10 @@
         <item>Elves are less proficient with melee weapons.</item>>
     </string-array>
     <string-array name="HeroClass_ClericPerks">
-        <item>Clerics start with 25 HP and 7 STR.</item>
+        <item>Clerics start with 25 HP and 10 STR.</item>
         <item>Clerics are immune to poison.</item>
         <item>Clerics start with an upgraded wand.</item>
-        <item>Clerics are extremely regenerates healths.</item>
+        <item>Clerics have better natural HP regeneration.</item>
         <item>Clerics are less proficient with melee weapons.</item>>
     </string-array>
 

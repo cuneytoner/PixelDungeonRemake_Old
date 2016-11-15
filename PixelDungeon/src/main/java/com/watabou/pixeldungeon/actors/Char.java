@@ -18,6 +18,7 @@
 package com.watabou.pixeldungeon.actors;
 
 import android.support.annotation.NonNull;
+import android.util.Log;
 
 import com.coner.android.util.Scrambler;
 import com.coner.android.util.TrackedRuntimeException;
@@ -328,10 +329,17 @@ public abstract class Char extends Actor {
 
 		hp(hp() - dmg);
 		if (dmg > 0 || src instanceof Char) {
-			getSprite().showStatus(hp() > ht() / 2 ?
-							CharSprite.WARNING :
-							CharSprite.NEGATIVE,
-					Integer.toString(dmg));
+			CharSprite cs = getSprite();
+			if (cs==null)
+			{
+                Log.d("Error","Char Sprite Null. Char Java Line: 335");
+            }
+			else {
+				getSprite().showStatus(hp() > ht() / 2 ?
+								CharSprite.WARNING :
+								CharSprite.NEGATIVE,
+						Integer.toString(dmg));
+			}
 		}
 		if (hp() <= 0) {
 			die(src);
