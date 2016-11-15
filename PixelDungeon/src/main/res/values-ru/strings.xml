@@ -444,4 +444,5 @@
   <!--STRINGS OF Toolbar CLASS-->
   <string name="Toolbar_Info1">Ты не знаешь, что там.</string>
   <string name="Toolbar_Info2">Выбери ячейку для изучения</string>
+  <string name="TaintedDrink_Message"></string>
 </resources>
