@@ -397,6 +397,13 @@ Kararınızı değiştirmeniz durumunda ana ekrandaki tablo simgesine tıklayabi
     <string name="BattleAxe_Gender">erkek</string>
     <string name="BattleAxe_Info">Bu muazzam başlı balta her darbede arkasında büyük bir hasar bırakır</string>
     <string name="BattleAxe_Name">savaş baltası</string>
+    <string name="Beer_Info">Çok güzel bir bira!</string>
+    <string name="Beer_Info1">Çekicisin!</string>
+    <string name="Beer_Info2">!!#@@!$##</string>
+    <string name="Beer_Info3">İyi hissetmiyorsun.</string>
+    <string name="Beer_Info4">Yavaşladın.</string>
+    <string name="Beer_Message">Bu içkinin tadı....ilginç</string>
+    <string name="Beer_Name">bira</string>
     <string name="Belongings_Name">sırt çantası</string>
     <string name="BlackSkull_Gender">erkek</string>
     <string name="BlackSkull_Info">Küçük bir kristal kafatası. Bir zamanlar Necropolis\'in güçlerinin kaynağıydı, Lich yenildikten sonra tüm güçlerini kaybetmiş görünüyor. Ama ellerinde tuttuğunda zihninden tuhaf bir düşünce geçiverdi</string>
@@ -608,7 +615,7 @@ Kararınızı değiştirmeniz durumunda ana ekrandaki tablo simgesine tıklayabi
     <string name="DriedRose_Info2"> Çekiciliğinden hiç birşey kaybetmemiş. Sonsuza kadar saklamak isteyeceğin kadar çekici görünüyor.</string>
     <string name="DriedRose_Name">kuru gül</string>
     <string name="Drink_ACDrink">İç</string>
-    <string name="Drink_Message">Bu içecek çok leziz</string>
+    <string name="Drink_Message">Bu içecek çok lezzetli!</string>
     <string name="Dungeon_DeadEnd">Burada ne yapıyorsun ?!</string>
     <string name="Dungeon_NoTips">Bu metin deşifre edilemez...</string>
     <string name="DwarfToken_Info">Bir çok cüce bu metal parçasını bilinmeyen bir amaçlar üzerinde taşırdı.Bir mücevher veya kimlik olabilir, Cüceler çok garip bir halktır kimbilir ?.</string>
@@ -1952,9 +1959,13 @@ Kararınızı değiştirmeniz durumunda ana ekrandaki tablo simgesine tıklayabi
     <string msgid="4180630057627064606" name="store_picture_title">"Resmi kaydet"</string>
     <string name="this_bowknot_gives_additional_attack_skill">Bu saç tokası +1 saldırı yeteneği verir</string>
     <style name="AppBaseTheme" parent="android:Theme.Light">
-        
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
     </style>
     <style name="AppTheme" parent="AppBaseTheme">
-        
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
     </style>
 </resources>

@@ -474,7 +474,7 @@ No, there was no place for her in the light, not anymore. She turned from the me
     <string name="Beer_Info2">!!#@@!$##</string>
     <string name="Beer_Info3">You are not feeling well.</string>
     <string name="Beer_Info4">You are slowed.</string>
-    <string name="Beer_Message">That food tasted... interesting.</string>
+    <string name="Beer_Message">That drink  tasted... interesting.</string>
     <string name="Beer_Name">beer</string>
     <string name="Belongings_Name">backpack</string>
     <string name="BlackSkull_Gender">masculine</string>
@@ -2052,10 +2052,14 @@ No, there was no place for her in the light, not anymore. She turned from the me
     <string name="testDevice" translatable="false">4B6C33ADEC57FB3E1BC39957E148D646</string>
     <string name="this_bowknot_gives_additional_attack_skill">This bowknot gives +1 additional attack skill</string>
     <style name="AppBaseTheme" parent="android:Theme.Light">
-        
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
     </style>
     <style name="AppTheme" parent="AppBaseTheme">
-        
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
     </style>
     <style name="Theme.IAPTheme" parent="android:Theme">
 <item name="android:windowIsFloating">true</item>
