@@ -25,7 +25,7 @@
     <string name="Beer_Info2">!!#@@!$##</string>
     <string name="Beer_Info3">You are not feeling well.</string>
     <string name="Beer_Info4">You are slowed.</string>
-    <string name="Beer_Message">That food tasted... interesting.</string>
+    <string name="Beer_Message">That drink  tasted... interesting.</string>
 
     <!-- STRINGS OF RottenFood CLASS -->
     <string name="TaintedDrink_Message">Nasty!</string>

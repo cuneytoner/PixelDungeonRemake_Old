@@ -2,8 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.coner.pixeldungeon.remake"
     android:installLocation="auto"
-    android:versionCode="16"
-    android:versionName="remake_01.16" >
+    android:versionCode="18"
+    android:versionName="remake_01.18" >
 
     <uses-sdk
         android:minSdkVersion="14"

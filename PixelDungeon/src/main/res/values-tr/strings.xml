@@ -544,20 +544,10 @@
     <string name="This_Shades_gives_additional_2_defense_skill_and_10_HP">Bu gözlükler +2 savunma ve +10 can puanı verir</string>
     <string name="This_Wizard_Hat_gives_additional_10_attack_skill_and_10_HP">Bu büyücü şapkası +10 saldırı ve +10 can puanı verir</string>
     <string name="this_bowknot_gives_additional_attack_skill">Bu saç tokası +1 saldırı yeteneği verir</string>
-    <string name="BoiledBeer_Info">Sıcak bira</string>
-    <string name="BoiledBeer_Name">Kaynamış bira</string>
     <string name="ClericArmor_ACSpecial">Hayat Akıntısı</string>
     <string name="ClericArmor_Desc">Bu pelerin yardımı ile Rahip , tanrıların gücünü canını tazelemek için yardımına çağırabilir.</string>
     <string name="ClericArmor_Name">Rahip Pelerini</string>
     <string name="ClericArmor_NotCleric">Bu pelerini sadece rahipler kullanabilir</string>
-    <string name="Drink_ACDrink">İç</string>
-    <string name="Drink_Message">Bu içecek çok leziz</string>
-    <string name="FrozenBeer_Info">Buz bir bir bardak bira. Serin ve buz gibi görünüyor</string>
-    <string name="FrozenBeer_Info1">Bilginin zihninden aktığını hissediyorsun</string>
-    <string name="FrozenBeer_Info2">Derinin sertleştiğini hissediyorsun</string>
-    <string name="FrozenBeer_Info4">Daha iyi hisediyorsun</string>
-    <string name="FrozenBeer_Info3">Diğer yaratıkların varlıklarını hissediyorsun</string>
-    <string name="FrozenBeer_Name">Donmuş bira</string>
     <string name="HeroClass_Cleric">rahip</string>
     <string name="HeroSubClass_DescArcPriest">Başrahip hayat güçü ve büyüleride ustadır. Canını yenileme ve zor durumda görünmez olma gücüne sahiptir</string>
     <string name="HeroSubClass_DescPaladin">Paladinler tanrı vergisi büyülerin ustasıdır. Saldırılarına rastgele büyü ataklarınıda eklerler</string>
@@ -570,7 +560,4 @@
     <string name="ScrollOfSummon_Info">Bu parşomeni okuduunda seni koruyacak bir yaratığı çağırabilirsin. Eğer şanslıysan bu yaratık çok güçlülerinden biri olabilir</string>
     <string name="ScrollOfSummon_Info1">Parşomen güçlü bir enerji yayıyor.</string>
     <string name="ScrollOfSummon_Name">Çağrı Parşomeni</string>
-    <string name="TaintedBeer_Info">Bozulmuş Bira</string>
-    <string name="TaintedBeer_Name">Bozulmuş Bira</string>
-    <string name="TaintedDrink_Message">"Tadı çok çirkin "</string>
 </resources>
