@@ -2,8 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.coner.pixeldungeon.remake"
     android:installLocation="auto"
-    android:versionCode="19"
-    android:versionName="remake_01.19" >
+    android:versionCode="20"
+    android:versionName="remake_01.20" >
 
     <uses-sdk
         android:minSdkVersion="14"

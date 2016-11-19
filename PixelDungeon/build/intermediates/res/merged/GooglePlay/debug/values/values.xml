@@ -310,7 +310,7 @@ No, there was no place for her in the light, not anymore. She turned from the me
 </attr><attr format="reference|string" name="scopeUris"/></declare-styleable>
     <integer name="google_play_services_version">9877000</integer>
     <string name="AboutScene_Lnk"/>
-    <string name="AboutScene_Mail" translatable="false">cuneytoner@gmail.com</string>
+    <string name="AboutScene_Mail">cuneytoner@gmail.com</string>
     <string name="AboutScene_OurSite">Our web site:</string>
     <string name="AboutScene_Snd">Send E-Mail</string>
     <string name="AboutScene_TranslatedBy"/>
@@ -1822,6 +1822,13 @@ No, there was no place for her in the light, not anymore. She turned from the me
     <string name="Welcome_Text_25">
         </string>
     <string name="Welcome_Title">Welcome!</string>
+    <string name="Wine_Info">It\'s looks very tasty!</string>
+    <string name="Wine_Info1">Let there be light!</string>
+    <string name="Wine_Info2">You feels refreshed</string>
+    <string name="Wine_Info3">You are not feeling well.</string>
+    <string name="Wine_Info4">You are very fast.</string>
+    <string name="Wine_Message">That drink  tasted... interesting.</string>
+    <string name="Wine_Name">Wine</string>
     <string name="WizardHat_Info">A beautiful silk hat decorated with star ornaments. Back in the old, some believed that the greatest wizards wore specially crafted clothing that increased their power. But it doesn\'t actually buffs your magical capabilities, but it\'s sure feels like it.</string>
     <string name="WizardHat_Name">Wizard Hat</string>
     <string name="WndBlacksmith_Prompt">OK, a deal is a deal, dat\'s what I can do for you: I can reforge 2 items and turn them into one of a better quality.</string>

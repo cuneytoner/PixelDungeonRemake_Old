@@ -52,6 +52,7 @@ import com.watabou.pixeldungeon.items.wands.Wand;
 import com.watabou.pixeldungeon.levels.DeadEndLevel;
 import com.watabou.pixeldungeon.levels.Level;
 import com.watabou.pixeldungeon.levels.Room;
+import com.watabou.pixeldungeon.levels.Terrain;
 import com.watabou.pixeldungeon.scenes.GameScene;
 import com.watabou.pixeldungeon.utils.BArray;
 import com.watabou.pixeldungeon.utils.GLog;
@@ -573,12 +574,17 @@ public class Dungeon {
                 int pos = ((Char) actor).getPos();
                 passable[pos] = false;
 
-                if (actor instanceof Mob) {
+                if (level.map[pos] == Terrain.WALL || level.map[pos] == Terrain.WALL_DECO) {
+                    passable[pos] = false;
+                }
+                else {
                     if (actor instanceof Mob) {
-                        if (((Mob) actor).isPet()) {
-                            passable[pos] = true;
-                        } else {
-                            passable[pos] = false;
+                        if (actor instanceof Mob) {
+                            if (((Mob) actor).isPet()) {
+                                passable[pos] = true;
+                            } else {
+                                passable[pos] = false;
+                            }
                         }
                     }
                 }
@@ -594,11 +600,15 @@ public class Dungeon {
 				if (visible[pos]) {
 					passable[pos] = false;
 
+					if (level.map[pos] == Terrain.WALL || level.map[pos] == Terrain.WALL_DECO) {
+						passable[pos] = false;
+					}
+					else
                     if (actor instanceof Mob) {
                         if (((Mob)actor).isPet()) {
                             passable[pos] = true;
                         } else {
-                                passable[pos] = false;
+                            passable[pos] = false;
                         }
 
                     }

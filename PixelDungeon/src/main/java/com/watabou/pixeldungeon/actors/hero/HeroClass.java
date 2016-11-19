@@ -39,6 +39,7 @@ import com.watabou.pixeldungeon.items.armor.MageArmor;
 import com.watabou.pixeldungeon.items.armor.PaladinArmor;
 import com.watabou.pixeldungeon.items.armor.RogueArmor;
 import com.watabou.pixeldungeon.items.armor.WarriorArmor;
+import com.watabou.pixeldungeon.items.drink.Wine;
 import com.watabou.pixeldungeon.items.drink.Beer;
 import com.watabou.pixeldungeon.items.drink.BoiledBeer;
 import com.watabou.pixeldungeon.items.drink.FrozenBeer;
@@ -157,22 +158,14 @@ public enum HeroClass {
 		hero.collect(new TomeOfMastery());
 		hero.collect(new Claymore().identify().upgrade(100));
 
-		hero.collect(new Beer());
-		hero.collect(new FrozenBeer());
-		hero.collect(new BoiledBeer());
-		hero.collect(new TaintedBeer());
-
-		hero.collect(new ArcPriestArmor());
-		hero.collect(new PaladinArmor());
-
-		hero.collect(new BlackSkull());
-		hero.collect(new BladeOfSouls().identify());
+		hero.collect(new Wine());
 
 		hero.ht(1000);
 		hero.hp(1000);
 		hero.attackSkill = 1000;
 		hero.defenseSkill = 1000;
 		hero.hasPetAccessory = true;
+
 		Scroll scroll = new ScrollOfSummon();
 		hero.collect(scroll);
 /*

@@ -50,7 +50,7 @@
       "29":{"kind":"GutsLevel", "depth":29,       "size":[48,48]},
       "30":{"kind":"GutsLevel", "depth":30,       "size":[48,48]},
       "31":{"kind":"HallsBossLevel", "depth":31,  "size":[48,48]},
-      "48":{"kind":"LastLevel", "depth":48,       "size":[48,48]}
+      "32":{"kind":"LastLevel", "depth":32,       "size":[48,48]}
    },
    "Graph":{
       "0":[["1"],[]],

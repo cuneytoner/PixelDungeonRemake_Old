@@ -1668,6 +1668,13 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         public static final int Welcome_Text_24_2=0x7f050610;
         public static final int Welcome_Text_25=0x7f050611;
         public static final int Welcome_Title=0x7f05042e;
+        public static final int Wine_Info=0x7f0506a9;
+        public static final int Wine_Info1=0x7f0506aa;
+        public static final int Wine_Info2=0x7f0506ab;
+        public static final int Wine_Info3=0x7f0506ac;
+        public static final int Wine_Info4=0x7f0506ad;
+        public static final int Wine_Message=0x7f0506ae;
+        public static final int Wine_Name=0x7f0506af;
         public static final int WizardHat_Info=0x7f050612;
         public static final int WizardHat_Name=0x7f050613;
         public static final int WndBlacksmith_Prompt=0x7f05042f;
@@ -1885,20 +1892,20 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         public static final int debug_menu_title=0x7f050016;
         public static final int debug_menu_troubleshooting=0x7f050017;
         public static final int decline=0x7f050018;
-        public static final int default_web_client_id=0x7f0506a9;
-        public static final int easyModeAdUnitId=0x7f0506aa;
-        public static final int easyModeSmallScreenAdUnitId=0x7f0506ab;
-        public static final int firebase_database_url=0x7f0506ac;
-        public static final int gcm_defaultSenderId=0x7f0506ad;
-        public static final int google_api_key=0x7f0506ae;
-        public static final int google_app_id=0x7f0506af;
-        public static final int google_crash_reporting_api_key=0x7f0506b0;
-        public static final int google_storage_bucket=0x7f0506b1;
-        public static final int iapKey=0x7f0506b2;
-        public static final int saveLoadAdUnitId=0x7f0506b3;
+        public static final int default_web_client_id=0x7f0506b0;
+        public static final int easyModeAdUnitId=0x7f0506b1;
+        public static final int easyModeSmallScreenAdUnitId=0x7f0506b2;
+        public static final int firebase_database_url=0x7f0506b3;
+        public static final int gcm_defaultSenderId=0x7f0506b4;
+        public static final int google_api_key=0x7f0506b5;
+        public static final int google_app_id=0x7f0506b6;
+        public static final int google_crash_reporting_api_key=0x7f0506b7;
+        public static final int google_storage_bucket=0x7f0506b8;
+        public static final int iapKey=0x7f0506b9;
+        public static final int saveLoadAdUnitId=0x7f0506ba;
         public static final int store_picture_message=0x7f050019;
         public static final int store_picture_title=0x7f05001a;
-        public static final int testDevice=0x7f0506b4;
+        public static final int testDevice=0x7f0506bb;
         public static final int this_bowknot_gives_additional_attack_skill=0x7f05069d;
     }
     public static final class style {

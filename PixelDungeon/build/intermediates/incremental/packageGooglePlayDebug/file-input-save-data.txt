@@ -1,5 +1,5 @@
 #Internal package file, do not edit.
-#Thu Nov 17 18:24:01 EET 2016
+#Fri Nov 18 18:37:32 EET 2016
 20.base=/media/cc/cc/Projects/PixelDungeonRemake/PixelDungeon/build/intermediates/assets/GooglePlay/debug
 143.base=/media/cc/cc/Projects/PixelDungeonRemake/PixelDungeon/build/intermediates/assets/GooglePlay/debug
 340.file=/media/cc/cc/Projects/PixelDungeonRemake/PixelDungeon/build/intermediates/assets/GooglePlay/debug/pet.png
