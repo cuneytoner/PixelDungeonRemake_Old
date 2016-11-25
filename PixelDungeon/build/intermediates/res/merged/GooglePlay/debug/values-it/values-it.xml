@@ -533,6 +533,12 @@ Puoi cambiare la tua decisione quando vuoi (Clicca l\'icona dei grafici nel tito
     <string name="Eye_Name_Objective">Malocchio</string>
     <string name="Fadeleaf_Desc">Toccare una Svanifoglia farà teletrasportare qualsiasi creatura in un posto a caso sul livello attuale.</string>
     <string name="Fadeleaf_Name">Svanifoglia</string>
+    <string name="FakeLastLevel2_TileDescStatue">La colonna è formata da reali teschi umanoidi. Stupendo.</string>
+    <string name="FakeLastLevel2_TileDescWater">Sembra lava ma è fredda ed è probabilmente sicura da toccare</string>
+    <string name="FakeLastLevel2_TileGrass">Muschio Di fuoco</string>
+    <string name="FakeLastLevel2_TileHighGrass">Fungo di fuoco</string>
+    <string name="FakeLastLevel2_TileStatue">Pilastro </string>
+    <string name="FakeLastLevel2_TileWater">Lava fredda</string>
     <string name="FetidRat_Desc">Questo topo marsupiale è molto più grande, di una forma regolare. Ed è circondato da una nuvola di gas puzzolente.</string>
     <string name="FetidRat_Gender">Femmina</string>
     <string name="FetidRat_Name">ratto puzzolente</string>
@@ -736,12 +742,6 @@ Puoi cambiare la tua decisione quando vuoi (Clicca l\'icona dei grafici nel tito
     <string name="Larva_Gender">Femmina</string>
     <string name="Larva_Name">larva di Dio</string>
     <string name="Larva_Name_Objective">larva di Dio</string>
-    <string name="LastLevel_TileDescStatue">La colonna è formata da reali teschi umanoidi. Stupendo.</string>
-    <string name="LastLevel_TileDescWater">Sembra lava ma è fredda ed è probabilmente sicura da toccare</string>
-    <string name="LastLevel_TileGrass">Muschio Di fuoco</string>
-    <string name="LastLevel_TileHighGrass">Fungo di fuoco</string>
-    <string name="LastLevel_TileStatue">Pilastro </string>
-    <string name="LastLevel_TileWater">Lava fredda</string>
     <string name="LastShopLevel_TileDescDeco">Diverse piastrelle mancanti qui.</string>
     <string name="LastShopLevel_TileDescEmptySP">una moquette spessa copre il pavimento.</string>
     <string name="LastShopLevel_TileDescEntrance">Una rampa conduce fino alla profondità superiore.</string>

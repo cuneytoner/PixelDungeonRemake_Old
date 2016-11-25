@@ -77,12 +77,12 @@
   <string name="Halls_TileDescStatue">Этот столб составлен из настоящих гуманоидных черепов. Прикольно.</string>
   <string name="Halls_TileDescBookshelf">Этот шкаф заполняют книги на мёртвых языках.</string>
   <!--STRINGS OF LastLevel CLASS-->
-  <string name="LastLevel_TileWater">Холодная лава</string>
-  <string name="LastLevel_TileGrass">Углемох</string>
-  <string name="LastLevel_TileHighGrass">Углегриб</string>
-  <string name="LastLevel_TileStatue">Столб</string>
-  <string name="LastLevel_TileDescWater">Это подозрительно похоже на лаву. Но она холодна на ощупь и, судя по всему, не представляет опасности.</string>
-  <string name="LastLevel_TileDescStatue">Этот столб составлен из настоящих гуманоидных черепов. Прикольно.</string>
+  <string name="FakeLastLevel2_TileWater">Холодная лава</string>
+  <string name="FakeLastLevel2_TileGrass">Углемох</string>
+  <string name="FakeLastLevel2_TileHighGrass">Углегриб</string>
+  <string name="FakeLastLevel2_TileStatue">Столб</string>
+  <string name="FakeLastLevel2_TileDescWater">Это подозрительно похоже на лаву. Но она холодна на ощупь и, судя по всему, не представляет опасности.</string>
+  <string name="FakeLastLevel2_TileDescStatue">Этот столб составлен из настоящих гуманоидных черепов. Прикольно.</string>
   <!--STRINGS OF LastShopLevel CLASS-->
   <string name="LastShopLevel_TileWater">Подозрительно окрашенная вода</string>
   <string name="LastShopLevel_TileHighGrass">Большой цветущий куст</string>

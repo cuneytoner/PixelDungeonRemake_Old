@@ -29,6 +29,7 @@ import com.watabou.pixeldungeon.actors.buffs.Sleep;
 import com.watabou.pixeldungeon.effects.Speck;
 import com.watabou.pixeldungeon.items.quest.DriedRose;
 import com.watabou.pixeldungeon.items.scrolls.ScrollOfLullaby;
+import com.watabou.pixeldungeon.items.scrolls.ScrollOfSummon;
 import com.watabou.pixeldungeon.items.wands.WandOfBlink;
 import com.watabou.pixeldungeon.items.weapon.enchantments.Leech;
 import com.watabou.pixeldungeon.mechanics.Ballistica;
@@ -51,8 +52,8 @@ public class Succubus extends Mob {
 		EXP = 12;
 		maxLvl = 25;
 
-		loot = new ScrollOfLullaby();
-		lootChance = 0.05f;
+		loot = new ScrollOfSummon();
+		lootChance = 0.15f;
 
 		RESISTANCES.add(Leech.class);
 		IMMUNITIES.add(Sleep.class);

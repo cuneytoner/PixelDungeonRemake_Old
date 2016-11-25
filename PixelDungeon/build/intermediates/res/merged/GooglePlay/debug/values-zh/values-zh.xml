@@ -618,6 +618,12 @@
     <string name="Eye_Name_Objective">邪眼</string>
     <string name="Fadeleaf_Desc">触碰到消逝草的任何生物都会被传送至当前层的一个随机地点。</string>
     <string name="Fadeleaf_Name">消逝草</string>
+    <string name="FakeLastLevel2_TileDescStatue">这根柱子是由真正的类人生物头骨制成的，真酷。</string>
+    <string name="FakeLastLevel2_TileDescWater">这看起来像是岩浆，不过是冰凉的，应该可以触碰。</string>
+    <string name="FakeLastLevel2_TileGrass">灰烬苔藓</string>
+    <string name="FakeLastLevel2_TileHighGrass">灰烬真菌</string>
+    <string name="FakeLastLevel2_TileStatue">台柱</string>
+    <string name="FakeLastLevel2_TileWater">冷岩浆</string>
     <string name="FetidRat_Desc">这只有袋的老鼠比通常的更大。他身边围绕着一圈恶臭云雾。</string>
     <string name="FetidRat_Gender">feminine</string>
     <string name="FetidRat_Name">腐臭老鼠</string>
@@ -851,12 +857,6 @@
     <string name="Larva_Gender">feminine</string>
     <string name="Larva_Name">古神幼虫</string>
     <string name="Larva_Name_Objective">古神幼虫</string>
-    <string name="LastLevel_TileDescStatue">这根柱子是由真正的类人生物头骨制成的，真酷。</string>
-    <string name="LastLevel_TileDescWater">这看起来像是岩浆，不过是冰凉的，应该可以触碰。</string>
-    <string name="LastLevel_TileGrass">灰烬苔藓</string>
-    <string name="LastLevel_TileHighGrass">灰烬真菌</string>
-    <string name="LastLevel_TileStatue">台柱</string>
-    <string name="LastLevel_TileWater">冷岩浆</string>
     <string name="LastShopLevel_TileDescDeco">这里的地面少了几块地砖。</string>
     <string name="LastShopLevel_TileDescEmptySP">厚厚的地毯覆盖在地面。</string>
     <string name="LastShopLevel_TileDescEntrance">通向上一层的斜坡。</string>

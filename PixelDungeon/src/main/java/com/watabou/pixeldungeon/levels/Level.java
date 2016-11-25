@@ -17,6 +17,7 @@
  */
 package com.watabou.pixeldungeon.levels;
 
+import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 
 import com.coner.android.util.TrackedRuntimeException;
@@ -25,6 +26,7 @@ import com.coner.pixeldungeon.remake.R;
 import com.coner.pixeldungeon.mobs.elementals.AirElemental;
 import com.coner.pixeldungeon.mobs.elementals.EarthElemental;
 import com.coner.pixeldungeon.mobs.elementals.WaterElemental;
+import com.coner.pixeldungeon.utils.DungeonGenerator;
 import com.watabou.noosa.Game;
 import com.watabou.noosa.Scene;
 import com.watabou.noosa.audio.Sample;
@@ -121,9 +123,18 @@ public abstract class Level implements Bundlable {
 	public void onHeroDescend(int pos) {
 	}
 
-	public enum Feeling {
-		NONE, CHASM, WATER, GRASS
+	public Feeling getFeeling() {
+		return feeling;
 	}
+
+	public void setFeeling(Feeling feeling) {
+		this.feeling = feeling;
+	}
+
+	public enum Feeling {
+		NONE, CHASM, WATER, GRASS, UNDEFINED
+	}
+
 
 	protected int width  = 32;
 	protected int height = 32;
@@ -159,7 +170,7 @@ public abstract class Level implements Bundlable {
 
 	public boolean[] discoverable;
 
-	public Feeling feeling = Feeling.NONE;
+	public Feeling feeling = Feeling.UNDEFINED;
 
 	public int entrance;
 
@@ -301,17 +312,23 @@ public abstract class Level implements Bundlable {
 				addItemToSpawn(Generator.random(Generator.Category.BULLETS));
 			}
 
-			if (Dungeon.depth > 1) {
-				switch (Random.Int(10)) {
-					case 0:
-						feeling = Feeling.CHASM;
-						break;
-					case 1:
-						feeling = Feeling.WATER;
-						break;
-					case 2:
-						feeling = Feeling.GRASS;
-						break;
+			feeling = DungeonGenerator.getCurrentLevelFeeling(levelId);
+			if (feeling == Feeling.UNDEFINED) {
+				if (Dungeon.depth > 1) {
+
+					switch (Random.Int(10)) {
+						case 0:
+							feeling = Feeling.CHASM;
+							break;
+						case 1:
+							feeling = Feeling.WATER;
+							break;
+						case 2:
+							feeling = Feeling.GRASS;
+							break;
+						default:
+							feeling = Feeling.NONE;
+					}
 				}
 			}
 		}

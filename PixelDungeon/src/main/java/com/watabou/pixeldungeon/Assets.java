@@ -90,6 +90,7 @@ public class Assets {
 	public static final String MIMIC = "mimic.png";
 	public static final String MIMIC_PIE = "mimic_pie.png";
 	public static final String SHADOW = "shadow.png";
+	public static final String DRAGON = "dragon.png";
 
 	public static final String SPIDER_QUEEN = "spider_queen.png";
 	public static final String SPIDER_EGG = "spider_egg.png";
@@ -109,6 +110,7 @@ public class Assets {
 	public static final String TILES_SHADOW_LORD = "tiles_shadow_lord.png";
 	public static final String TILES_GUTS = "tiles_guts_x.png";
 	public static final String TILES_NECRO = "tiles_necropolis.png";
+	public static final String TILES_DRAGONPITS = "tiles_dragon_pits.png";
 
 	public static final String WATER_SEWERS = "water0.png";
 	public static final String WATER_PRISON = "water1.png";
@@ -118,6 +120,7 @@ public class Assets {
 	public static final String WATER_SPIDERS = "water_spider_nest.png";
 	public static final String WATER_GUTS = "water_guts.png";
 	public static final String WATER_NECRO = "water_necropolis.png";
+	public static final String WATER_DRAGONPITS = "water_dragon_pits.png";
 
 	public static final String BUFFS_SMALL = "buffs.png";
 	public static final String BUFFS_LARGE = "large_buffs.png";

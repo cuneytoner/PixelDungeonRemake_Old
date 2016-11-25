@@ -1,13 +1,18 @@
 package com.coner.pixeldungeon.utils;
 
+import android.support.annotation.NonNull;
+import android.support.annotation.Nullable;
+
 import com.coner.android.util.JsonHelper;
 import com.coner.android.util.TrackedRuntimeException;
 import com.coner.pixeldungeon.levels.FakeLastLevel;
 import com.coner.pixeldungeon.levels.GutsLevel;
+import com.coner.pixeldungeon.levels.LastLevel;
 import com.coner.pixeldungeon.levels.NecroBossLevel;
 import com.coner.pixeldungeon.levels.NecroLevel;
 import com.coner.pixeldungeon.levels.PredesignedLevel;
 import com.coner.pixeldungeon.levels.ShadowLordLevel;
+import com.coner.pixeldungeon.remake.BuildConfig;
 import com.coner.pixeldungeon.remake.EventCollector;
 import com.coner.pixeldungeon.spiders.levels.SpiderLevel;
 import com.watabou.pixeldungeon.Dungeon;
@@ -17,9 +22,9 @@ import com.watabou.pixeldungeon.levels.CavesLevel;
 import com.watabou.pixeldungeon.levels.CityBossLevel;
 import com.watabou.pixeldungeon.levels.CityLevel;
 import com.watabou.pixeldungeon.levels.DeadEndLevel;
+import com.watabou.pixeldungeon.levels.FakeLastLevel2;
 import com.watabou.pixeldungeon.levels.HallsBossLevel;
 import com.watabou.pixeldungeon.levels.HallsLevel;
-import com.watabou.pixeldungeon.levels.LastLevel;
 import com.watabou.pixeldungeon.levels.LastShopLevel;
 import com.watabou.pixeldungeon.levels.Level;
 import com.watabou.pixeldungeon.levels.PrisonBossLevel;
@@ -28,6 +33,9 @@ import com.watabou.pixeldungeon.levels.SewerBossLevel;
 import com.watabou.pixeldungeon.levels.SewerLevel;
 import com.watabou.pixeldungeon.utils.GLog;
 import com.watabou.pixeldungeon.windows.WndStory;
+import com.coner.pixeldungeon.levels.DragonPitsLevel;
+import com.coner.pixeldungeon.levels.DragonPitsBossLevel;
+
 
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -36,21 +44,28 @@ import org.json.JSONObject;
 import java.util.HashMap;
 
 public class DungeonGenerator {
-	public static final String DEAD_END_LEVEL = "DeadEndLevel";
-	public static final String HALLS_LEVEL    = "HallsLevel";
-	public static final String CITY_LEVEL     = "CityLevel";
-	public static final String CAVES_LEVEL    = "CavesLevel";
-	public static final String PRISON_LEVEL   = "PrisonLevel";
-	public static final String SEWER_LEVEL    = "SewerLevel";
-	public static final String SPIDER_LEVEL   = "SpiderLevel";
-	public static final String GUTS_LEVEL     = "GutsLevel";
+	private static final String DEAD_END_LEVEL = "DeadEndLevel";
+	private static final String HALLS_LEVEL    = "HallsLevel";
+	private static final String CITY_LEVEL     = "CityLevel";
+	private static final String CAVES_LEVEL    = "CavesLevel";
+	private static final String PRISON_LEVEL   = "PrisonLevel";
+	private static final String SEWER_LEVEL    = "SewerLevel";
+	private static final String SPIDER_LEVEL   = "SpiderLevel";
+	private static final String GUTS_LEVEL     = "GutsLevel";
+    private static final String DRAGON_PITS_LEVEL = "DragonPitsLevel";
 
-	static JSONObject mDungeonMap;
-	static JSONObject mLevels;
-	static JSONObject mGraph;
+	public static final String UNKNOWN        = "unknown";
+
+	static private JSONObject mDungeonMap;
+	static private JSONObject mLevels;
+	static private JSONObject mGraph;
+
+	@NonNull
+	private static String mCurrentLevelId;
+	private static int    mCurrentLevelDepth;
 
 	static private HashMap<String, Class<? extends Level>> mLevelKindList;
-	private static HashMap<String, Integer>                mStoryMap;
+	static private HashMap<String, Integer>                mStoryMap;
 
 	static {
 		initLevelsMap();
@@ -60,12 +75,11 @@ public class DungeonGenerator {
 	}
 
 	private static void initLevelsMap() {
-		if(PixelDungeon.isAlpha()) {
-			mDungeonMap = JsonHelper.readFile("levelsDesc/Dungeon_alpha.json");
+		if(PixelDungeon.isAlpha() && BuildConfig.DEBUG) {
+			mDungeonMap = JsonHelper.readJsonFromAsset("levelsDesc/Dungeon_alpha.json");
 		} else {
-			mDungeonMap = JsonHelper.readFile("levelsDesc/Dungeon.json");
+			mDungeonMap = JsonHelper.readJsonFromAsset("levelsDesc/Dungeon.json");
 		}
-
 
 		try {
 			mLevels = mDungeonMap.getJSONObject("Levels");
@@ -88,7 +102,7 @@ public class DungeonGenerator {
 		registerLevelClass(LastShopLevel.class);
 		registerLevelClass(HallsLevel.class);
 		registerLevelClass(HallsBossLevel.class);
-		registerLevelClass(LastLevel.class);
+		registerLevelClass(FakeLastLevel2.class);
 		registerLevelClass(DeadEndLevel.class);
 
 		registerLevelClass(PredesignedLevel.class);
@@ -98,6 +112,11 @@ public class DungeonGenerator {
 
 		registerLevelClass(NecroLevel.class);
 		registerLevelClass(NecroBossLevel.class);
+
+        registerLevelClass(DragonPitsLevel.class);
+        registerLevelClass(DragonPitsBossLevel.class);
+
+		registerLevelClass(LastLevel.class);
 	}
 
 	public static String getEntryLevelKind() {
@@ -164,13 +183,13 @@ public class DungeonGenerator {
 				EventCollector.logEvent("DungeonGenerator","wrong next level index");
 			}
 
-			String nextLevelId = nextLevelSet.getString(index);
+			mCurrentLevelId = nextLevelSet.getString(index);
 
-			JSONObject nextLevelDesc = mLevels.getJSONObject(nextLevelId);
+			JSONObject nextLevelDesc = mLevels.getJSONObject(mCurrentLevelId);
 
-			next.levelId    = nextLevelId;
-			next.levelDepth = nextLevelDesc.getInt("depth");
-			next.levelKind  = nextLevelDesc.getString("kind");
+			next.levelId      = mCurrentLevelId;
+			mCurrentLevelDepth = next.levelDepth = nextLevelDesc.getInt("depth");
+			next.levelKind    = nextLevelDesc.getString("kind");
 
 			JSONArray levelSize = nextLevelDesc.getJSONArray("size");
 			next.xs = levelSize.getInt(0);
@@ -180,8 +199,50 @@ public class DungeonGenerator {
 		} catch (JSONException e) {
 			throw new TrackedRuntimeException(e);
 		}
-
 	}
+
+	@Nullable
+	private static String getLevelProperty(String id, String property) {
+
+		try {
+			JSONObject levelDesc = mLevels.getJSONObject(id);
+
+			if(levelDesc.has(property)) {
+				return levelDesc.getString(property);
+			}
+		} catch (JSONException e) {
+			EventCollector.logException(e);
+		}
+		return null;
+	}
+
+	@Nullable
+	public static String tiles(String id) {
+		return getLevelProperty(id, "tiles");
+	}
+
+	@Nullable
+	public static String water(String id) {
+		return getLevelProperty(id, "water");
+	}
+
+	@Nullable
+	public static String music(String id) {
+		return getLevelProperty(id, "music");
+	}
+
+	public static Level.Feeling getCurrentLevelFeeling(String id) {
+		try {
+			String feeling = getLevelProperty(id, "feeling");
+			if(feeling==null) {
+				return Level.Feeling.UNDEFINED;
+			}
+			return Level.Feeling.valueOf(getLevelProperty(id, "feeling"));
+		} catch (IllegalArgumentException e){
+			return Level.Feeling.UNDEFINED;
+		}
+	}
+
 
 	public static Position descend(Position current) {
 		return descendOrAscend(current, true);
@@ -220,6 +281,7 @@ public class DungeonGenerator {
 			mStoryMap.put(CITY_LEVEL, WndStory.ID_METROPOLIS);
 			mStoryMap.put(HALLS_LEVEL, WndStory.ID_HALLS);
 			mStoryMap.put(GUTS_LEVEL, WndStory.ID_GUTS);
+            mStoryMap.put(DRAGON_PITS_LEVEL, WndStory.ID_DRAGON_PITS);
 		}
 
 		Integer id = mStoryMap.get(level.levelKind());
@@ -230,7 +292,7 @@ public class DungeonGenerator {
 		WndStory.showChapter(id);
 	}
 
-	public static String guessLevelId(String levelKind, int levelDepth) {
+	static String guessLevelId(String levelKind, int levelDepth) {
 		try {
 			JSONArray ids = mLevels.names();
 			for (int i = 0; i < ids.length(); i++) {
@@ -248,4 +310,20 @@ public class DungeonGenerator {
 		}
 		return "1";
 	}
+
+	@NonNull
+	public static String getCurrentLevelId() {
+		return mCurrentLevelId;
+	}
+
+	public static int getCurrentLevelDepth() {
+		return mCurrentLevelDepth;
+	}
+
+	public static void loadingLevel(Position next) {
+		mCurrentLevelId    = next.levelId;
+		mCurrentLevelDepth = next.levelDepth;
+	}
+
+
 }

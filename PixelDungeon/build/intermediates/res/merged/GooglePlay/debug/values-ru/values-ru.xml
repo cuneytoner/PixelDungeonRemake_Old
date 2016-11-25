@@ -654,6 +654,12 @@
     <string name="Eye_Name_Objective">око зла</string>
     <string name="Fadeleaf_Desc">Касание Бледнолиста телепортирует любое существо в случайную точку текущего уровня.</string>
     <string name="Fadeleaf_Name">Бледнолист</string>
+    <string name="FakeLastLevel2_TileDescStatue">Этот столб составлен из настоящих гуманоидных черепов. Прикольно.</string>
+    <string name="FakeLastLevel2_TileDescWater">Это подозрительно похоже на лаву. Но она холодна на ощупь и, судя по всему, не представляет опасности.</string>
+    <string name="FakeLastLevel2_TileGrass">Углемох</string>
+    <string name="FakeLastLevel2_TileHighGrass">Углегриб</string>
+    <string name="FakeLastLevel2_TileStatue">Столб</string>
+    <string name="FakeLastLevel2_TileWater">Холодная лава</string>
     <string name="FetidRat_Desc">Эта сумчатая крыса крупнее обычной. Вокруг неё витает зловоние.</string>
     <string name="FetidRat_Gender">feminine</string>
     <string name="FetidRat_Name">мерзкая крыса</string>
@@ -900,12 +906,6 @@
     <string name="Larva_Gender">feminine</string>
     <string name="Larva_Name">личинка бога</string>
     <string name="Larva_Name_Objective">личинку бога</string>
-    <string name="LastLevel_TileDescStatue">Этот столб составлен из настоящих гуманоидных черепов. Прикольно.</string>
-    <string name="LastLevel_TileDescWater">Это подозрительно похоже на лаву. Но она холодна на ощупь и, судя по всему, не представляет опасности.</string>
-    <string name="LastLevel_TileGrass">Углемох</string>
-    <string name="LastLevel_TileHighGrass">Углегриб</string>
-    <string name="LastLevel_TileStatue">Столб</string>
-    <string name="LastLevel_TileWater">Холодная лава</string>
     <string name="LastShopLevel_TileDescDeco">Здесь недостаёт нескольких плиток.</string>
     <string name="LastShopLevel_TileDescEmptySP">Пол укрыт плотным ковром.</string>
     <string name="LastShopLevel_TileDescEntrance">Лестница в преисподнюю.</string>
@@ -2005,13 +2005,9 @@ remix.23.2:\n
     <string msgid="8020323581538738027" name="store_picture_message">"Разрешить объявлению сохранить изображение в галерее?"</string>
     <string msgid="4180630057627064606" name="store_picture_title">"Сохранение изображения"</string>
     <style name="AppBaseTheme" parent="android:Theme.Light">
-        <!--
-            Theme customizations available in newer API levels can go in
-            res/values-vXX/styles.xml, while customizations related to
-            backward-compatibility can go here.
-        -->
+        
     </style>
     <style name="AppTheme" parent="AppBaseTheme">
-        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+        
     </style>
 </resources>

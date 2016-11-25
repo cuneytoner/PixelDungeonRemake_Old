@@ -134,9 +134,7 @@ public abstract class Wand extends KindOfWeapon {
 		actions.remove(AC_EQUIP);
 		actions.remove(AC_UNEQUIP);
 		
-		if (hero.heroClass == HeroClass.MAGE
-			|| hero.subClass == HeroSubClass.SHAMAN) {
-			
+		if (hero.heroClass == HeroClass.CLERIC || hero.heroClass == HeroClass.MAGE || hero.subClass == HeroSubClass.SHAMAN) {
 			if(hero.belongings.weapon == this) {
 				actions.add(AC_UNEQUIP); 
 			} else {
@@ -514,7 +512,7 @@ public abstract class Wand extends KindOfWeapon {
 		}
 
 		protected void delay() {
-			float time2charge = ((Hero) target).heroClass == HeroClass.MAGE ? TIME_TO_CHARGE
+			float time2charge = ( ((Hero) target).heroClass == HeroClass.CLERIC || ((Hero) target).heroClass == HeroClass.MAGE ) ? TIME_TO_CHARGE
 					/ (float) Math.sqrt(1 + effectiveLevel())
 					: TIME_TO_CHARGE;
 			spend(time2charge);

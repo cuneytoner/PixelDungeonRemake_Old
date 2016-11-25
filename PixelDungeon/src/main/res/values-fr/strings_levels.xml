@@ -77,12 +77,12 @@
   <string name="Halls_TileDescStatue">Le pilier est fait avec de véritables crânes humains. Magnifique.</string>
   <string name="Halls_TileDescBookshelf">Des livres écrits dans d\'anciens langages recouvrent la bibliothèque.</string>
   <!--STRINGS OF LastLevel CLASS-->
-  <string name="LastLevel_TileWater">Lave froide</string>
-  <string name="LastLevel_TileGrass">Braises de mousse</string>
-  <string name="LastLevel_TileHighGrass">Braises de champignons</string>
-  <string name="LastLevel_TileStatue">Pilier</string>
-  <string name="LastLevel_TileDescWater">Ca ressemble à de la lave, mais c\'est froid et probablement pas dangereux à toucher.</string>
-  <string name="LastLevel_TileDescStatue">Le pilier est fait de véritables crânes humains. Magnifique.</string>
+  <string name="FakeLastLevel2_TileWater">Lave froide</string>
+  <string name="FakeLastLevel2_TileGrass">Braises de mousse</string>
+  <string name="FakeLastLevel2_TileHighGrass">Braises de champignons</string>
+  <string name="FakeLastLevel2_TileStatue">Pilier</string>
+  <string name="FakeLastLevel2_TileDescWater">Ca ressemble à de la lave, mais c\'est froid et probablement pas dangereux à toucher.</string>
+  <string name="FakeLastLevel2_TileDescStatue">Le pilier est fait de véritables crânes humains. Magnifique.</string>
   <!--STRINGS OF LastShopLevel CLASS-->
   <string name="LastShopLevel_TileWater">Eau colorée douteuse</string>
   <string name="LastShopLevel_TileHighGrass">Hautes fleurs épanouies</string>

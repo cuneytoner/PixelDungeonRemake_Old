@@ -482,6 +482,12 @@ Du kannst deine Entscheidung jederzeit ändern (Klicke auf das Diagrammsymbol be
     <string name="Eye_Name_Objective">Dunkler Starrer</string>
     <string name="Fadeleaf_Desc">Das berühren eines Verblassenden Blattes, teleportiert irgendeine Kreatur an einen zufälligen Platz der aktuellen Ebene.</string>
     <string name="Fadeleaf_Name">Verblassendes Blatt</string>
+    <string name="FakeLastLevel2_TileDescStatue">Diese Säule ist aus echter Menschenhaut gemacht. Beeindruckend.</string>
+    <string name="FakeLastLevel2_TileDescWater">Es schaut nach Lava aus, aber sie ist kalt und wahrscheinlich kann man sie gefahrlos berühren.</string>
+    <string name="FakeLastLevel2_TileGrass">Aschemoos</string>
+    <string name="FakeLastLevel2_TileHighGrass">Aschepilz</string>
+    <string name="FakeLastLevel2_TileStatue">Säule</string>
+    <string name="FakeLastLevel2_TileWater">Erkaltete Lava</string>
     <string name="FetidRat_Desc">Diese Beutelratte ist viel größer als normal. Sie wird von einer fauligen Aura umgeben.</string>
     <string name="FetidRat_Gender">weiblich</string>
     <string name="FetidRat_Name">stinkende Ratte</string>
@@ -673,12 +679,6 @@ Du kannst deine Entscheidung jederzeit ändern (Klicke auf das Diagrammsymbol be
     <string name="Larva_Gender">weiblich</string>
     <string name="Larva_Name">göttliche Larve</string>
     <string name="Larva_Name_Objective">göttliche Larve</string>
-    <string name="LastLevel_TileDescStatue">Diese Säule ist aus echter Menschenhaut gemacht. Beeindruckend.</string>
-    <string name="LastLevel_TileDescWater">Es schaut nach Lava aus, aber sie ist kalt und wahrscheinlich kann man sie gefahrlos berühren.</string>
-    <string name="LastLevel_TileGrass">Aschemoos</string>
-    <string name="LastLevel_TileHighGrass">Aschepilz</string>
-    <string name="LastLevel_TileStatue">Säule</string>
-    <string name="LastLevel_TileWater">Erkaltete Lava</string>
     <string name="LastShopLevel_TileDescDeco">Mehrere Bodenplatten fehlen.</string>
     <string name="LastShopLevel_TileDescEmptySP">Dicker Teppich bedeckt den Boden.</string>
     <string name="LastShopLevel_TileDescEntrance">Eine Rampe führt eine Ebene nach oben.</string>
