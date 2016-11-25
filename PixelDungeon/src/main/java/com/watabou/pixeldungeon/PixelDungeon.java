@@ -76,6 +76,11 @@ public class PixelDungeon extends Game {
 				com.watabou.pixeldungeon.items.drink.Beer.class,
 				"com.watabou.pixeldungeon.items.drink.Drink");
 
+		// Remake 1.20
+		com.watabou.utils.Bundle.addAlias(
+				com.watabou.pixeldungeon.items.drink.Wine.class,
+				"com.watabou.pixeldungeon.items.drink.Wine");
+
 	}
 
 	@Override

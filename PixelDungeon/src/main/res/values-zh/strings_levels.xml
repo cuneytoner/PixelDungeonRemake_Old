@@ -77,12 +77,12 @@
   <string name="Halls_TileDescStatue">这根柱子是由真正的类人生物头骨制成的，真酷。</string>
   <string name="Halls_TileDescBookshelf">用远古语言写就的书籍堆积在书架里。</string>
   <!--STRINGS OF LastLevel CLASS-->
-  <string name="LastLevel_TileWater">冷岩浆</string>
-  <string name="LastLevel_TileGrass">灰烬苔藓</string>
-  <string name="LastLevel_TileHighGrass">灰烬真菌</string>
-  <string name="LastLevel_TileStatue">台柱</string>
-  <string name="LastLevel_TileDescWater">这看起来像是岩浆，不过是冰凉的，应该可以触碰。</string>
-  <string name="LastLevel_TileDescStatue">这根柱子是由真正的类人生物头骨制成的，真酷。</string>
+  <string name="FakeLastLevel2_TileWater">冷岩浆</string>
+  <string name="FakeLastLevel2_TileGrass">灰烬苔藓</string>
+  <string name="FakeLastLevel2_TileHighGrass">灰烬真菌</string>
+  <string name="FakeLastLevel2_TileStatue">台柱</string>
+  <string name="FakeLastLevel2_TileDescWater">这看起来像是岩浆，不过是冰凉的，应该可以触碰。</string>
+  <string name="FakeLastLevel2_TileDescStatue">这根柱子是由真正的类人生物头骨制成的，真酷。</string>
   <!--STRINGS OF LastShopLevel CLASS-->
   <string name="LastShopLevel_TileWater">有着可疑颜色的水</string>
   <string name="LastShopLevel_TileHighGrass">茂盛开放的花朵</string>

@@ -77,13 +77,13 @@
     <string name="Halls_TileDescWater">It looks like lava, but it\'s cold and probably safe to touch.</string>
     <string name="Halls_TileDescStatue">The pillar is made of real humanoid skulls. Awesome.</string>
     <string name="Halls_TileDescBookshelf">Books in ancient languages smoulder in the bookshelf.</string>
-    <!-- STRINGS OF LastLevel CLASS -->
-    <string name="LastLevel_TileWater">Cold lava</string>
-    <string name="LastLevel_TileGrass">Embermoss</string>
-    <string name="LastLevel_TileHighGrass">Emberfungi</string>
-    <string name="LastLevel_TileStatue">Pillar</string>
-    <string name="LastLevel_TileDescWater">It looks like lava, but it\'s cold and probably safe to touch.</string>
-    <string name="LastLevel_TileDescStatue">The pillar is made of real humanoid skulls. Awesome.</string>
+    <!-- STRINGS OF FakeLastLevel CLASS -->
+    <string name="FakeLastLevel2_TileWater">Cold lava</string>
+    <string name="FakeLastLevel2_TileGrass">Embermoss</string>
+    <string name="FakeLastLevel2_TileHighGrass">Emberfungi</string>
+    <string name="FakeLastLevel2_TileStatue">Pillar</string>
+    <string name="FakeLastLevel2_TileDescWater">It looks like lava, but it\'s cold and probably safe to touch.</string>
+    <string name="FakeLastLevel2_TileDescStatue">The pillar is made of real humanoid skulls. Awesome.</string>
     <!-- STRINGS OF LastShopLevel CLASS -->
     <string name="LastShopLevel_TileWater">Suspiciously colored water</string>
     <string name="LastShopLevel_TileHighGrass">High blooming flowers</string>
@@ -99,6 +99,19 @@
     <string name="Sewer_TileWater">Murky water</string>
     <string name="Sewer_TileDescDeco">Wet yellowish moss covers the floor.</string>
     <string name="Sewer_TileDescBookshelf">The bookshelf is packed with cheap useless books. Might it burn?</string>
+
+    <!-- STRINGS OF DaragonPits & DragonPitsBossLevel CLASS -->
+    <string name="Dragon_Pits_TileWater">Dark Cold Water</string>
+    <string name="Dragon_Pits_TileGrass">Glossymoss</string>
+    <string name="Dragon_Pits_TileHighGrass">Glossyfungi</string>
+
+    <string name="Dragon_Pits_TileStatue">Statue</string>
+    <string name="Dragon_Pits_TileDescWater">Too cold and dark water .</string>
+    <string name="Dragon_Pits_TileDescStatue">The statue is made of molten gold. Awesome.</string>
+    <string name="Dragon_Pits_TileDescBookshelf">Partly burnt books in ancient languages smoulder in the bookshelf.</string>
+    <string name="Dragon_Pits_TileDescEntrance">The ladder leads up to the upper depth.</string>
+    <string name="Dragon_Pits_TileDescExit">The ladder leads down to the lower depth.</string>
+    <string name="Dragon_Pits_TileDescDeco">A vein of some ore is visible on the wall. Gold?</string>
 
     <!-- PACKAGE /levels/features -->
     <!-- STRINGS OF AlchemyPot CLASS -->

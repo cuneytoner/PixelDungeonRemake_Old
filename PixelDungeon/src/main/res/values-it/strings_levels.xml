@@ -78,12 +78,12 @@ Potrebbe bruciare?</string>
   <string name="Halls_TileDescStatue">La colonna è formata da reali teschi umanoidi. Stupendo.</string>
   <string name="Halls_TileDescBookshelf">Libri in lingue antiche nella libreria.</string>
   <!--STRINGS OF LastLevel CLASS-->
-  <string name="LastLevel_TileWater">Lava fredda</string>
-  <string name="LastLevel_TileGrass">Muschio Di fuoco</string>
-  <string name="LastLevel_TileHighGrass">Fungo di fuoco</string>
-  <string name="LastLevel_TileStatue">Pilastro </string>
-  <string name="LastLevel_TileDescWater">Sembra lava ma è fredda ed è probabilmente sicura da toccare</string>
-  <string name="LastLevel_TileDescStatue">La colonna è formata da reali teschi umanoidi. Stupendo.</string>
+  <string name="FakeLastLevel2_TileWater">Lava fredda</string>
+  <string name="FakeLastLevel2_TileGrass">Muschio Di fuoco</string>
+  <string name="FakeLastLevel2_TileHighGrass">Fungo di fuoco</string>
+  <string name="FakeLastLevel2_TileStatue">Pilastro </string>
+  <string name="FakeLastLevel2_TileDescWater">Sembra lava ma è fredda ed è probabilmente sicura da toccare</string>
+  <string name="FakeLastLevel2_TileDescStatue">La colonna è formata da reali teschi umanoidi. Stupendo.</string>
   <!--STRINGS OF LastShopLevel CLASS-->
   <string name="LastShopLevel_TileWater">acqua colorata sospettosa</string>
   <string name="LastShopLevel_TileHighGrass">fiori Alti che sbocciano</string>

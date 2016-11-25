@@ -30,6 +30,7 @@ import com.watabou.noosa.Game;
 import com.watabou.pixeldungeon.actors.mobs.Bat;
 import com.watabou.pixeldungeon.actors.mobs.Brute;
 import com.watabou.pixeldungeon.actors.mobs.Crab;
+import com.watabou.pixeldungeon.actors.mobs.Dragon;
 import com.watabou.pixeldungeon.actors.mobs.DM300;
 import com.watabou.pixeldungeon.actors.mobs.Elemental;
 import com.watabou.pixeldungeon.actors.mobs.Eye;
@@ -151,6 +152,9 @@ public class MobFactory {
 		registerMobClass(RunicSkull.class);
 		registerMobClass(Zombie.class);
 		registerMobClass(Hedgehog.class);
+
+		registerMobClass(Dragon.class);
+
 	}
 	
 	public static Class<? extends Mob> mobClassRandom() {

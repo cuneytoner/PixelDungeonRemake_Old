@@ -164,6 +164,7 @@ public class ItemSpriteSheet {
 	public static final int BEER     	= 148;
 	public static final int FROZEN_BEER = 150;
 	public static final int BOILED_BEER = 151;
+	public static final int WINE 		= 152;
 
 	
 	// Rotten food

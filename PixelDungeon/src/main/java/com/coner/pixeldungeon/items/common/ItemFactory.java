@@ -59,6 +59,7 @@ import com.watabou.pixeldungeon.items.drink.Beer;
 import com.watabou.pixeldungeon.items.drink.BoiledBeer;
 import com.watabou.pixeldungeon.items.drink.FrozenBeer;
 import com.watabou.pixeldungeon.items.drink.TaintedBeer;
+import com.watabou.pixeldungeon.items.drink.Wine;
 import com.watabou.pixeldungeon.items.food.ChargrilledMeat;
 import com.watabou.pixeldungeon.items.food.FrozenCarpaccio;
 import com.watabou.pixeldungeon.items.food.MysteryMeat;
@@ -350,6 +351,7 @@ public class ItemFactory {
 		registerItemClass(FrozenBeer.class);
 		registerItemClass(TaintedBeer.class);
 		registerItemClass(BoiledBeer.class);
+        registerItemClass(Wine.class);
 	}
 
 	public static Class<? extends Item> itemClassRandom() {

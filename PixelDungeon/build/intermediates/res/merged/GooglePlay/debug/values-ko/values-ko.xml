@@ -562,6 +562,12 @@ Special Thanks to: Omen267901</string>
     <string name="Eye_Name_Objective">이블아이</string>
     <string name="Fadeleaf_Desc">미명초를 만지면 현재 층의 랜덤한 장소로 순간이동시켜 버린다.</string>
     <string name="Fadeleaf_Name">미명초</string>
+    <string name="FakeLastLevel2_TileDescStatue">이 기둥은 진짜 휴머노이드 해골로 만들어져 있다. 대박.</string>
+    <string name="FakeLastLevel2_TileDescWater">용암처럼 보인다. 하지만 차갑고, 아마 만져도 괜찮을 것이다.</string>
+    <string name="FakeLastLevel2_TileGrass">화롯불이끼</string>
+    <string name="FakeLastLevel2_TileHighGrass">화롯불버섯</string>
+    <string name="FakeLastLevel2_TileStatue">기둥</string>
+    <string name="FakeLastLevel2_TileWater">차가운 용암</string>
     <string name="FetidRat_Desc">이 주머니 쥐는 보통 녀석들 보다 훨씬 몸집이 크다.  악취나는 구름에 뒤덮혀 있다.</string>
     <string name="FetidRat_Gender">여성</string>
     <string name="FetidRat_Name">악취 쥐</string>
@@ -795,12 +801,6 @@ Special Thanks to: Omen267901</string>
     <string name="Larva_Gender">여성</string>
     <string name="Larva_Name">신의 애벌레</string>
     <string name="Larva_Name_Objective">신의 애벌레</string>
-    <string name="LastLevel_TileDescStatue">이 기둥은 진짜 휴머노이드 해골로 만들어져 있다. 대박.</string>
-    <string name="LastLevel_TileDescWater">용암처럼 보인다. 하지만 차갑고, 아마 만져도 괜찮을 것이다.</string>
-    <string name="LastLevel_TileGrass">화롯불이끼</string>
-    <string name="LastLevel_TileHighGrass">화롯불버섯</string>
-    <string name="LastLevel_TileStatue">기둥</string>
-    <string name="LastLevel_TileWater">차가운 용암</string>
     <string name="LastShopLevel_TileDescDeco">타일 이가 여기저기 빠져 있다.</string>
     <string name="LastShopLevel_TileDescEmptySP">두터운 카펫이 복도를 덮고 있다.</string>
     <string name="LastShopLevel_TileDescEntrance">위 층으로 향하는 경사로</string>

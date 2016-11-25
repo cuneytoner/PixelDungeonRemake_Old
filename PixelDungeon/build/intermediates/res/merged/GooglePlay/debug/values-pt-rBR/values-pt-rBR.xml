@@ -609,6 +609,12 @@ Você poderá mudar sua decisão a qualquer momento (clique no icone de estatist
     <string name="Eye_Name_Objective">olho do mal</string>
     <string name="Fadeleaf_Desc">Tocar uma planta de teleporte irá teleportar qualquer criatura para um lugar aleatório no nível atual.</string>
     <string name="Fadeleaf_Name">planta de teleporte</string>
+    <string name="FakeLastLevel2_TileDescStatue">@string/Halls_TileDescStatue</string>
+    <string name="FakeLastLevel2_TileDescWater">@string/Halls_TileDescWater</string>
+    <string name="FakeLastLevel2_TileGrass">@string/Halls_TileGrass</string>
+    <string name="FakeLastLevel2_TileHighGrass">@string/Halls_TileHighGrass</string>
+    <string name="FakeLastLevel2_TileStatue">@string/Halls_TileStatue</string>
+    <string name="FakeLastLevel2_TileWater">@string/Halls_TileWater</string>
     <string name="FetidRat_Desc">O rato marsupial é muito maior que um normal. É cercado por uma nuvem poluída.</string>
     <string name="FetidRat_Gender">feminino</string>
     <string name="FetidRat_Name">rato fedorento</string>
@@ -829,12 +835,6 @@ Você poderá mudar sua decisão a qualquer momento (clique no icone de estatist
     <string name="Larva_Gender">feminino</string>
     <string name="Larva_Name">larva de deus</string>
     <string name="Larva_Name_Objective">larva de deus</string>
-    <string name="LastLevel_TileDescStatue">@string/Halls_TileDescStatue</string>
-    <string name="LastLevel_TileDescWater">@string/Halls_TileDescWater</string>
-    <string name="LastLevel_TileGrass">@string/Halls_TileGrass</string>
-    <string name="LastLevel_TileHighGrass">@string/Halls_TileHighGrass</string>
-    <string name="LastLevel_TileStatue">@string/Halls_TileStatue</string>
-    <string name="LastLevel_TileWater">@string/Halls_TileWater</string>
     <string name="LastShopLevel_TileDescDeco">@string/City_TileDescDeco</string>
     <string name="LastShopLevel_TileDescEmptySP">@string/City_TileDescEmptySP</string>
     <string name="LastShopLevel_TileDescEntrance">@string/City_TileDescEntrance</string>

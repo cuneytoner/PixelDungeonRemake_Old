@@ -66,5 +66,14 @@
       "28":{"SuspiciousRat":1,"ZombieGnoll":1,"Worm":2,"Elemental":0.02},
 	  "29":{"SuspiciousRat":2,"ZombieGnoll":1,"Worm":2},
       "30":{"SuspiciousRat":1,"ZombieGnoll":1,"Worm":2}
+   },
+   "DragonPitsLevel":{
+      "33":{"Succubus":11,"Eye":2,"Scorpio":11},
+      "34":{"Succubus":14,"Eye":4,"Scorpio":13},
+      "35":{"Succubus":15,"Eye":8,"Scorpio":21},
+      "36":{"Succubus":16,"Eye":12,"Scorpio":33}
+   },
+   "DragonPitsBossLevel":{
+      "any":{"Dragon":1}
    }
 }

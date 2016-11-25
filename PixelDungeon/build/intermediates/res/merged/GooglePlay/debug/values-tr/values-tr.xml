@@ -654,6 +654,12 @@ Kararınızı değiştirmeniz durumunda ana ekrandaki tablo simgesine tıklayabi
     <string name="Eye_Name_Objective">şeytani göz</string>
     <string name="Fadeleaf_Desc">Kara yaprağa dokunan herhangi bir şey aynı seviyede rastgele bir yere ışınlanır.</string>
     <string name="Fadeleaf_Name">Kara Yaprak</string>
+    <string name="FakeLastLevel2_TileDescStatue">Bu sütun gerçek insansı hayvan kafataşları ile yapılmış. Muhteşem.</string>
+    <string name="FakeLastLevel2_TileDescWater">Lav gibi görünüyor ama soğuk , muhtemelen dokumak güvenli.</string>
+    <string name="FakeLastLevel2_TileGrass">Köz yosunu</string>
+    <string name="FakeLastLevel2_TileHighGrass">Köz Mantarı</string>
+    <string name="FakeLastLevel2_TileStatue">Sütun</string>
+    <string name="FakeLastLevel2_TileWater">Soğuk lav</string>
     <string name="FetidRat_Desc">Bu keseli sıçan diğerlerinden daha büyük. Kokuşmuş bir bulut ile çevrili.</string>
     <string name="FetidRat_Gender">erkek</string>
     <string name="FetidRat_Name">kokuşmuş sıçan</string>
@@ -912,12 +918,6 @@ Kararınızı değiştirmeniz durumunda ana ekrandaki tablo simgesine tıklayabi
     <string name="Larva_Gender">erkek</string>
     <string name="Larva_Name">Tanrı\'nın Larvası</string>
     <string name="Larva_Name_Objective">Tanrı\'nın Larvası</string>
-    <string name="LastLevel_TileDescStatue">Bu sütun gerçek insansı hayvan kafataşları ile yapılmış. Muhteşem.</string>
-    <string name="LastLevel_TileDescWater">Lav gibi görünüyor ama soğuk , muhtemelen dokumak güvenli.</string>
-    <string name="LastLevel_TileGrass">Köz yosunu</string>
-    <string name="LastLevel_TileHighGrass">Köz Mantarı</string>
-    <string name="LastLevel_TileStatue">Sütun</string>
-    <string name="LastLevel_TileWater">Soğuk lav</string>
     <string name="LastShopLevel_TileDescDeco">Burada bazı tuğlalar eksik.</string>
     <string name="LastShopLevel_TileDescEmptySP">Kalın bir halı zemin kaplıyor.</string>
     <string name="LastShopLevel_TileDescEntrance">Yukarıya çıkan bir rampa.</string>
@@ -1865,6 +1865,7 @@ Kararınızı değiştirmeniz durumunda ana ekrandaki tablo simgesine tıklayabi
     <string name="WndSettings_ZoomIn">+</string>
     <string name="WndSettings_ZoomOut">-</string>
     <string name="WndStory_Caves">Terkedilmiş hapisanenin altında mağaralar uzanır. Şehir tarafından kullanılmak için çok derinde ve maden açısından fakirdir.Geçmişte buralarda ticaret noktaları vardı ancak Cüce Metropolis\'inin düşmesinden sonra çürümeye yüz tuttu. Artık buralarda gnoller ve yeraltı canlıları dışında kimse yaşamıyor.</string>
+    <string name="WndStory_Dragon_Pits">Efsaneler , en yaşlı ejderha Neee \'nin bu çukurda yaşadığını anlatır. Bir çok maceracı bu çukurlara girmeye cesaret etti ancak hiç biri geri dönmedi.</string>
     <string name="WndStory_Guts">Yenildi, parçalara ayrıldı ama tamamen yokedilmedi. Eski tanrı bu zindanın en derinlerinde hapsedildi.Ama mühür kırıldı ve karabasanlardan fırlayan yaratıklar dışarıya çıkmaya başladır. Bu koridorlarda yürüdüğünde Eski Tanrının kapl atışlarının yankısını duyabiliyorsun.</string>
     <string name="WndStory_Halls">Geçmişte bu bölge Metropolis\'in dış yerleşimleriydi. Pahalıya malolan zafer sonrasında , cüceler bu bölgelerdeki Eski Tanrı ve şeytani kalıntılarını temizlemek için güçsüz düştüler. Burada tutunan şetyani güçlerden sonra burası Şeytan Salonları olarak anıldı.\n\nÇok az maceraperest bu seviyelere ulaşabilmiştir...</string>
     <string name="WndStory_Metropolis">Cüce Metropolis\'i cüce eyaletleri arasında en şanlısıydı.Cüceler doruk noktasında , mekanize orduları ile Eski Tanrı ve onun şeytan ordusunu yendiler. Ancak zaferle geri dönen savaşçılar bozulmanın tohumlarını yanlarında getirdiler. Bu zafer cüce yeraltı şehrinin sonunun başlanıgıcı oldu.</string>
@@ -1959,13 +1960,9 @@ Kararınızı değiştirmeniz durumunda ana ekrandaki tablo simgesine tıklayabi
     <string msgid="4180630057627064606" name="store_picture_title">"Resmi kaydet"</string>
     <string name="this_bowknot_gives_additional_attack_skill">Bu saç tokası +1 saldırı yeteneği verir</string>
     <style name="AppBaseTheme" parent="android:Theme.Light">
-        <!--
-            Theme customizations available in newer API levels can go in
-            res/values-vXX/styles.xml, while customizations related to
-            backward-compatibility can go here.
-        -->
+        
     </style>
     <style name="AppTheme" parent="AppBaseTheme">
-        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+        
     </style>
 </resources>

@@ -622,6 +622,12 @@
     <string name="Eye_Name_Objective">イビルアイ</string>
     <string name="Fadeleaf_Desc">フェードリーフに触れた生き物は、現在の階層のランダムな場所へテレポートします。</string>
     <string name="Fadeleaf_Name">フェードリーフ</string>
+    <string name="FakeLastLevel2_TileDescStatue">柱は人の頭蓋骨で出来ている。驚きだ。</string>
+    <string name="FakeLastLevel2_TileDescWater">これは溶岩のように見えますが、冷たく、触っても平気でしょう。</string>
+    <string name="FakeLastLevel2_TileGrass">炭焼き苔</string>
+    <string name="FakeLastLevel2_TileHighGrass">炭焼き菌類</string>
+    <string name="FakeLastLevel2_TileStatue">柱</string>
+    <string name="FakeLastLevel2_TileWater">冷えた溶岩</string>
     <string name="FetidRat_Desc">この有袋ネズミは通常のものよりとても大きい。それは不潔な空気で囲まれています。</string>
     <string name="FetidRat_Gender">弱々しい</string>
     <string name="FetidRat_Name">太ったネズミ</string>
@@ -841,12 +847,6 @@
     <string name="Larva_Gender">弱々しい</string>
     <string name="Larva_Name">神の幼生</string>
     <string name="Larva_Name_Objective">神の幼生</string>
-    <string name="LastLevel_TileDescStatue">柱は人の頭蓋骨で出来ている。驚きだ。</string>
-    <string name="LastLevel_TileDescWater">これは溶岩のように見えますが、冷たく、触っても平気でしょう。</string>
-    <string name="LastLevel_TileGrass">炭焼き苔</string>
-    <string name="LastLevel_TileHighGrass">炭焼き菌類</string>
-    <string name="LastLevel_TileStatue">柱</string>
-    <string name="LastLevel_TileWater">冷えた溶岩</string>
     <string name="LastShopLevel_TileDescDeco">いくつかのタイルはここにありません。</string>
     <string name="LastShopLevel_TileDescEmptySP">厚いカーペットが床を覆っています。</string>
     <string name="LastShopLevel_TileDescEntrance">ランプは上の階層に通じています。</string>

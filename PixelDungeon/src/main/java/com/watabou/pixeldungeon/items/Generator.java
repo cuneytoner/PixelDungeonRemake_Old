@@ -37,6 +37,7 @@ import com.watabou.pixeldungeon.items.armor.PlateArmor;
 import com.watabou.pixeldungeon.items.armor.ScaleArmor;
 import com.watabou.pixeldungeon.items.bags.Bag;
 import com.watabou.pixeldungeon.items.drink.Beer;
+import com.watabou.pixeldungeon.items.drink.Wine;
 import com.watabou.pixeldungeon.items.drink.Drink;
 import com.watabou.pixeldungeon.items.food.Food;
 import com.watabou.pixeldungeon.items.food.MysteryMeat;
@@ -280,7 +281,8 @@ public class Generator {
 		Category.FOOD.probs = new float[]{ 12, 4, 2 };
 
         Category.DRINK.classes = new Class<?>[]{
-                Beer.class
+                Beer.class,
+				Wine.class
         };
         Category.DRINK.probs = new float[]{14};
 

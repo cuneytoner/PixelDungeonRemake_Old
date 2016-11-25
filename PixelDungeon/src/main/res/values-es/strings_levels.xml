@@ -77,12 +77,12 @@
   <string name="Halls_TileDescStatue">La columna está hecha de cráneos humanos. Increíble. </string>
   <string name="Halls_TileDescBookshelf">Libros en antiguos idiomas humean en la estantería.</string>
   <!--STRINGS OF LastLevel CLASS-->
-  <string name="LastLevel_TileWater">Lava fría</string>
-  <string name="LastLevel_TileGrass">musgofuego</string>
-  <string name="LastLevel_TileHighGrass">Hongobrasa</string>
-  <string name="LastLevel_TileStatue">Columna</string>
-  <string name="LastLevel_TileDescWater">Parece lava, pero está fría y probablemente sea segura de tocar.</string>
-  <string name="LastLevel_TileDescStatue">La columna está hecha de cráneos humanos. Increíble. </string>
+  <string name="FakeLastLevel2_TileWater">Lava fría</string>
+  <string name="FakeLastLevel2_TileGrass">musgofuego</string>
+  <string name="FakeLastLevel2_TileHighGrass">Hongobrasa</string>
+  <string name="FakeLastLevel2_TileStatue">Columna</string>
+  <string name="FakeLastLevel2_TileDescWater">Parece lava, pero está fría y probablemente sea segura de tocar.</string>
+  <string name="FakeLastLevel2_TileDescStatue">La columna está hecha de cráneos humanos. Increíble. </string>
   <!--STRINGS OF LastShopLevel CLASS-->
   <string name="LastShopLevel_TileWater">Agua de color sospechoso</string>
   <string name="LastShopLevel_TileHighGrass">Plantas de crecimiento alto</string>

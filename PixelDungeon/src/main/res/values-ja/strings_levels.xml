@@ -77,12 +77,12 @@
   <string name="Halls_TileDescStatue">柱は人の頭蓋骨で出来ている。驚きだ。</string>
   <string name="Halls_TileDescBookshelf">本棚には古代の言語で書かれた本がある。</string>
   <!--STRINGS OF LastLevel CLASS-->
-  <string name="LastLevel_TileWater">冷えた溶岩</string>
-  <string name="LastLevel_TileGrass">炭焼き苔</string>
-  <string name="LastLevel_TileHighGrass">炭焼き菌類</string>
-  <string name="LastLevel_TileStatue">柱</string>
-  <string name="LastLevel_TileDescWater">これは溶岩のように見えますが、冷たく、触っても平気でしょう。</string>
-  <string name="LastLevel_TileDescStatue">柱は人の頭蓋骨で出来ている。驚きだ。</string>
+  <string name="FakeLastLevel2_TileWater">冷えた溶岩</string>
+  <string name="FakeLastLevel2_TileGrass">炭焼き苔</string>
+  <string name="FakeLastLevel2_TileHighGrass">炭焼き菌類</string>
+  <string name="FakeLastLevel2_TileStatue">柱</string>
+  <string name="FakeLastLevel2_TileDescWater">これは溶岩のように見えますが、冷たく、触っても平気でしょう。</string>
+  <string name="FakeLastLevel2_TileDescStatue">柱は人の頭蓋骨で出来ている。驚きだ。</string>
   <!--STRINGS OF LastShopLevel CLASS-->
   <string name="LastShopLevel_TileWater">怪しい色の水</string>
   <string name="LastShopLevel_TileHighGrass">高い花が咲く</string>

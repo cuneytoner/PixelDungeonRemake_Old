@@ -24,6 +24,7 @@ import com.coner.android.util.TrackedRuntimeException;
 import com.coner.pixeldungeon.items.necropolis.BlackSkull;
 import com.coner.pixeldungeon.mobs.common.MobFactory;
 import com.coner.pixeldungeon.mobs.spiders.SpiderServant;
+import com.coner.pixeldungeon.remake.BuildConfig;
 import com.coner.pixeldungeon.remake.R;
 import com.watabou.noosa.Game;
 import com.watabou.pixeldungeon.Badges;
@@ -894,7 +895,12 @@ public abstract class Mob extends Char {
 		boolean b = false;
 		Mob pet;
 		do {
-			pet = MobFactory.mobClassRandom().newInstance();
+			if(BuildConfig.DEBUG){
+				pet = new Shadow();
+			}
+			else {
+				pet = MobFactory.mobClassRandom().newInstance();
+			}
 			b = pet.canBePet();
 			if (b = false) {
 				pet = null;

@@ -78,12 +78,12 @@
     <string name="Halls_TileDescStatue">Bu sütun gerçek insansı hayvan kafataşları ile yapılmış. Muhteşem.</string>
     <string name="Halls_TileDescBookshelf">Antik dillerdeki kitaplar kitaplıkta iç içe .</string>
     <!-- STRINGS OF LastLevel CLASS -->
-    <string name="LastLevel_TileWater">Soğuk lav</string>
-    <string name="LastLevel_TileGrass">Köz yosunu</string>
-    <string name="LastLevel_TileHighGrass">Köz Mantarı</string>
-    <string name="LastLevel_TileStatue">Sütun</string>
-    <string name="LastLevel_TileDescWater">Lav gibi görünüyor ama soğuk , muhtemelen dokumak güvenli.</string>
-    <string name="LastLevel_TileDescStatue">Bu sütun gerçek insansı hayvan kafataşları ile yapılmış. Muhteşem.</string>
+    <string name="FakeLastLevel2_TileWater">Soğuk lav</string>
+    <string name="FakeLastLevel2_TileGrass">Köz yosunu</string>
+    <string name="FakeLastLevel2_TileHighGrass">Köz Mantarı</string>
+    <string name="FakeLastLevel2_TileStatue">Sütun</string>
+    <string name="FakeLastLevel2_TileDescWater">Lav gibi görünüyor ama soğuk , muhtemelen dokumak güvenli.</string>
+    <string name="FakeLastLevel2_TileDescStatue">Bu sütun gerçek insansı hayvan kafataşları ile yapılmış. Muhteşem.</string>
     <!-- STRINGS OF LastShopLevel CLASS -->
     <string name="LastShopLevel_TileWater">Rengi şüpheli su</string>
     <string name="LastShopLevel_TileHighGrass">Yüksek çiçekli bitkiler</string>

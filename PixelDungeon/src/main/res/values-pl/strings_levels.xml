@@ -77,12 +77,12 @@
   <string name="Halls_TileDescStatue">Kolumna wykonana z prawdziwych, humanoidalnych czaszek. Świetne.</string>
   <string name="Halls_TileDescBookshelf">Książki napisane w starożytnych językach kurzą się na półce.</string>
   <!--STRINGS OF LastLevel CLASS-->
-  <string name="LastLevel_TileWater">Zimna lawa</string>
-  <string name="LastLevel_TileGrass">Żaromech</string>
-  <string name="LastLevel_TileHighGrass">Żarogrzyby</string>
-  <string name="LastLevel_TileStatue">Kolumna</string>
-  <string name="LastLevel_TileDescWater">Wygląda jak lawa, ale jest zimna i prawdopodobnie można jej bezpiecznie dotknąć.</string>
-  <string name="LastLevel_TileDescStatue">Kolumna wykonana z prawdziwych, humanoidalnych czaszek. Świetne.</string>
+  <string name="FakeLastLevel2_TileWater">Zimna lawa</string>
+  <string name="FakeLastLevel2_TileGrass">Żaromech</string>
+  <string name="FakeLastLevel2_TileHighGrass">Żarogrzyby</string>
+  <string name="FakeLastLevel2_TileStatue">Kolumna</string>
+  <string name="FakeLastLevel2_TileDescWater">Wygląda jak lawa, ale jest zimna i prawdopodobnie można jej bezpiecznie dotknąć.</string>
+  <string name="FakeLastLevel2_TileDescStatue">Kolumna wykonana z prawdziwych, humanoidalnych czaszek. Świetne.</string>
   <!--STRINGS OF LastShopLevel CLASS-->
   <string name="LastShopLevel_TileWater">Podejrzanie kolorowa woda</string>
   <string name="LastShopLevel_TileHighGrass">Wysokie, kwitnące kwiaty</string>

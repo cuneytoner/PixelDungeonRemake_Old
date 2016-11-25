@@ -45,6 +45,16 @@
     <string name="Crab_Name_Objective">sewer crab</string>
     <string name="Crab_Desc">These huge crabs are at the top of the food chain in the sewers. They are extremely fast and their thick exoskeleton can withstand heavy blows.</string>
     <string name="Crab_Defense">parried</string>
+
+    <!-- STRINGS OF Dragon CLASS -->
+    <string name="Dragon_Name">Nidhoggr</string>
+    <string name="Dragon_Gender">masculine</string>
+    <string name="Dragon_Name_Objective">Nidhoggr</string>
+    <string name="Dragon_Desc">Nidhoggr is a monstrous dragon that relentlessly gnaws on the deepest root of Yggdrasill. He hopes to chew through the root causing the World Tree to fall and bring about the end of the world. He seizure the Yendor Amulet and keep it in a secret place </string>
+    <string name="Dragon_Info1">Nidhoggr healing himself</string>
+    <string name="Dragon_Info2">Noo.You are just human, how can it be ?</string>
+    <string name="Dragon_Info3">How dare you !!!</string>
+
     <!-- STRINGS OF DM300 CLASS -->
     <string name="DM300_Name">DM-300</string>
     <string name="DM300_Gender">masculine</string>

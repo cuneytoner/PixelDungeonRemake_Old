@@ -109,14 +109,14 @@ public class FakeLastLevel extends Level {
 	public String tileName( int tile ) {
 		switch (tile) {
 		case Terrain.WATER:
-			return Game.getVar(R.string.LastLevel_TileWater);
+			return Game.getVar(R.string.FakeLastLevel2_TileWater);
 		case Terrain.GRASS:
-			return Game.getVar(R.string.LastLevel_TileGrass);
+			return Game.getVar(R.string.FakeLastLevel2_TileGrass);
 		case Terrain.HIGH_GRASS:
-			return Game.getVar(R.string.LastLevel_TileHighGrass);
+			return Game.getVar(R.string.FakeLastLevel2_TileHighGrass);
 		case Terrain.STATUE:
 		case Terrain.STATUE_SP:
-			return Game.getVar(R.string.LastLevel_TileStatue);
+			return Game.getVar(R.string.FakeLastLevel2_TileStatue);
 		default:
 			return super.tileName( tile );
 		}
@@ -126,10 +126,10 @@ public class FakeLastLevel extends Level {
 	public String tileDesc(int tile) {
 		switch (tile) {
 		case Terrain.WATER:
-			return Game.getVar(R.string.LastLevel_TileDescWater);
+			return Game.getVar(R.string.FakeLastLevel2_TileDescWater);
 		case Terrain.STATUE:
 		case Terrain.STATUE_SP:
-			return Game.getVar(R.string.LastLevel_TileDescStatue);
+			return Game.getVar(R.string.FakeLastLevel2_TileDescStatue);
 		default:
 			return super.tileDesc(tile);
 		}

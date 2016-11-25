@@ -594,6 +594,12 @@ Zawsze możesz zmienić swoją decyzję (naciśnij ikonę tabeli w ekranie tytu�
     <string name="Eye_Name_Objective">Złe oko</string>
     <string name="Fadeleaf_Desc">Sok ze Znikoliścia jest wykorzystywany przy tworzeniu teleportów, ponieważ powoduje on przemieszczenie w losowe miejsce. Oczywiście portale wykorzystują specjalnie przygotowany sok ze Znikoliścia, mogąc ukierunkować trasę teleportacji, lecz dzikie odmiany są niestabilne.</string>
     <string name="Fadeleaf_Name">Znikoliść</string>
+    <string name="FakeLastLevel2_TileDescStatue">Kolumna wykonana z prawdziwych, humanoidalnych czaszek. Świetne.</string>
+    <string name="FakeLastLevel2_TileDescWater">Wygląda jak lawa, ale jest zimna i prawdopodobnie można jej bezpiecznie dotknąć.</string>
+    <string name="FakeLastLevel2_TileGrass">Żaromech</string>
+    <string name="FakeLastLevel2_TileHighGrass">Żarogrzyby</string>
+    <string name="FakeLastLevel2_TileStatue">Kolumna</string>
+    <string name="FakeLastLevel2_TileWater">Zimna lawa</string>
     <string name="FetidRat_Desc">Ten ściekoszczur jest znacznie większy od zwykłego szczura. Jest otoczony chmurą paraliżującego smrodu...</string>
     <string name="FetidRat_Gender">kobiecy</string>
     <string name="FetidRat_Name">cuchnący ściekoszczur</string>
@@ -824,12 +830,6 @@ Zawsze możesz zmienić swoją decyzję (naciśnij ikonę tabeli w ekranie tytu�
     <string name="Larva_Gender">kobiecy</string>
     <string name="Larva_Name">larwa boga</string>
     <string name="Larva_Name_Objective">larwa boga</string>
-    <string name="LastLevel_TileDescStatue">Kolumna wykonana z prawdziwych, humanoidalnych czaszek. Świetne.</string>
-    <string name="LastLevel_TileDescWater">Wygląda jak lawa, ale jest zimna i prawdopodobnie można jej bezpiecznie dotknąć.</string>
-    <string name="LastLevel_TileGrass">Żaromech</string>
-    <string name="LastLevel_TileHighGrass">Żarogrzyby</string>
-    <string name="LastLevel_TileStatue">Kolumna</string>
-    <string name="LastLevel_TileWater">Zimna lawa</string>
     <string name="LastShopLevel_TileDescDeco">Na tej ścianie brakuje kilku kafelków.</string>
     <string name="LastShopLevel_TileDescEmptySP">Gruby dywan pokrywa podłogę.</string>
     <string name="LastShopLevel_TileDescEntrance">Rampa prowadząca na górny poziom.</string>

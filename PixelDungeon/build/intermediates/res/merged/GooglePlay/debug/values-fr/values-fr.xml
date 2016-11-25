@@ -584,6 +584,12 @@ Vous pouvez ressentir une énergie maléfique cachée dans l\' %s</string>
     <string name="Eye_Name_Objective">oeil malsain</string>
     <string name="Fadeleaf_Desc">Toucher une Pâlefeuille téléportera n\'importe quelle créature à un endroit aléatoire de l\'étage actuel. </string>
     <string name="Fadeleaf_Name">Pâlefeuille</string>
+    <string name="FakeLastLevel2_TileDescStatue">Le pilier est fait de véritables crânes humains. Magnifique.</string>
+    <string name="FakeLastLevel2_TileDescWater">Ca ressemble à de la lave, mais c\'est froid et probablement pas dangereux à toucher.</string>
+    <string name="FakeLastLevel2_TileGrass">Braises de mousse</string>
+    <string name="FakeLastLevel2_TileHighGrass">Braises de champignons</string>
+    <string name="FakeLastLevel2_TileStatue">Pilier</string>
+    <string name="FakeLastLevel2_TileWater">Lave froide</string>
     <string name="FetidRat_Desc">Ce rat est plus gros que les autres. Il est entouré d\'un nuage nauséabond.</string>
     <string name="FetidRat_Gender">femelle</string>
     <string name="FetidRat_Name">rat fétide</string>
@@ -816,12 +822,6 @@ Vous vous considérez prêt à relever le défi, mais plus important encore, vou
     <string name="Larva_Gender">femelle</string>
     <string name="Larva_Name">larve du dieu</string>
     <string name="Larva_Name_Objective">larve du dieu</string>
-    <string name="LastLevel_TileDescStatue">Le pilier est fait de véritables crânes humains. Magnifique.</string>
-    <string name="LastLevel_TileDescWater">Ca ressemble à de la lave, mais c\'est froid et probablement pas dangereux à toucher.</string>
-    <string name="LastLevel_TileGrass">Braises de mousse</string>
-    <string name="LastLevel_TileHighGrass">Braises de champignons</string>
-    <string name="LastLevel_TileStatue">Pilier</string>
-    <string name="LastLevel_TileWater">Lave froide</string>
     <string name="LastShopLevel_TileDescDeco">Il manque plusieurs briques ici.</string>
     <string name="LastShopLevel_TileDescEmptySP">Un tapis épais recouvre le sol.</string>
     <string name="LastShopLevel_TileDescEntrance">Une rampe amène à l\'étage du dessus.</string>

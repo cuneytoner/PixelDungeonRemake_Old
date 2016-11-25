@@ -655,6 +655,12 @@ No, no había lugar para ella en la luz, ya no. Ella se apartó de la escasa luz
     <string name="Eye_Name_Objective">ojo malvado</string>
     <string name="Fadeleaf_Desc">Tocar una Hojaesfuma transportará a cualquier critatura a un lugar al azar del nivel actual. </string>
     <string name="Fadeleaf_Name">Hojaesfuma</string>
+    <string name="FakeLastLevel2_TileDescStatue">La columna está hecha de cráneos humanos. Increíble. </string>
+    <string name="FakeLastLevel2_TileDescWater">Parece lava, pero está fría y probablemente sea segura de tocar.</string>
+    <string name="FakeLastLevel2_TileGrass">musgofuego</string>
+    <string name="FakeLastLevel2_TileHighGrass">Hongobrasa</string>
+    <string name="FakeLastLevel2_TileStatue">Columna</string>
+    <string name="FakeLastLevel2_TileWater">Lava fría</string>
     <string name="FetidRat_Desc">Esta rata marsupial es mucho mas grande que otras. Está rodeada por una nube fétida.</string>
     <string name="FetidRat_Gender">femenino</string>
     <string name="FetidRat_Name">rata fétida</string>
@@ -900,12 +906,6 @@ No, no había lugar para ella en la luz, ya no. Ella se apartó de la escasa luz
     <string name="Larva_Gender">femenino</string>
     <string name="Larva_Name">larva del dios</string>
     <string name="Larva_Name_Objective">larva del dios</string>
-    <string name="LastLevel_TileDescStatue">La columna está hecha de cráneos humanos. Increíble. </string>
-    <string name="LastLevel_TileDescWater">Parece lava, pero está fría y probablemente sea segura de tocar.</string>
-    <string name="LastLevel_TileGrass">musgofuego</string>
-    <string name="LastLevel_TileHighGrass">Hongobrasa</string>
-    <string name="LastLevel_TileStatue">Columna</string>
-    <string name="LastLevel_TileWater">Lava fría</string>
     <string name="LastShopLevel_TileDescDeco">Faltan varias baldosas aquí.</string>
     <string name="LastShopLevel_TileDescEmptySP">Una gruesa alfombra cubre el suelo.</string>
     <string name="LastShopLevel_TileDescEntrance">Una rampa lleva a la profundidad superior</string>

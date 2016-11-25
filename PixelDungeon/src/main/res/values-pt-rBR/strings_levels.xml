@@ -77,12 +77,12 @@
   <string name="Halls_TileDescStatue">O pilar é feito de crânios humanóides reais. Impressionante.</string>
   <string name="Halls_TileDescBookshelf">Livros em línguas antigas fumegam na estante.</string>
   <!--STRINGS OF LastLevel CLASS-->
-  <string name="LastLevel_TileWater">@string/Halls_TileWater</string>
-  <string name="LastLevel_TileGrass">@string/Halls_TileGrass</string>
-  <string name="LastLevel_TileHighGrass">@string/Halls_TileHighGrass</string>
-  <string name="LastLevel_TileStatue">@string/Halls_TileStatue</string>
-  <string name="LastLevel_TileDescWater">@string/Halls_TileDescWater</string>
-  <string name="LastLevel_TileDescStatue">@string/Halls_TileDescStatue</string>
+  <string name="FakeLastLevel2_TileWater">@string/Halls_TileWater</string>
+  <string name="FakeLastLevel2_TileGrass">@string/Halls_TileGrass</string>
+  <string name="FakeLastLevel2_TileHighGrass">@string/Halls_TileHighGrass</string>
+  <string name="FakeLastLevel2_TileStatue">@string/Halls_TileStatue</string>
+  <string name="FakeLastLevel2_TileDescWater">@string/Halls_TileDescWater</string>
+  <string name="FakeLastLevel2_TileDescStatue">@string/Halls_TileDescStatue</string>
   <!--STRINGS OF LastShopLevel CLASS-->
   <string name="LastShopLevel_TileWater">@string/City_TileWater</string>
   <string name="LastShopLevel_TileHighGrass">@string/City_TileHighGrass</string>
